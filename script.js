@@ -10,18 +10,18 @@ resizeCanvas();
 
   
 let config = {
-    SIM_RESOLUTION: 528,
-    DYE_RESOLUTION: 1440,
+    SIM_RESOLUTION: 512,
+    DYE_RESOLUTION: 512,
     CAPTURE_RESOLUTION: 512,
     DENSITY_DISSIPATION: 2.1, //3.5
     VELOCITY_DISSIPATION: 2,
     PRESSURE: 10.1, //0.1
     PRESSURE_ITERATIONS: 120,
-    CURL: 2,
-    SPLAT_RADIUS: 0.1,
-    SPLAT_FORCE: 22000,
+    CURL: 112,
+    SPLAT_RADIUS: 0.05,
+    SPLAT_FORCE: 100,
     SHADING: true,
-    COLOR_UPDATE_SPEED: 0.6,
+    COLOR_UPDATE_SPEED: 0.06,
     BACK_COLOR: { r: 0, g: 0, b: 0 },
 }
 
@@ -670,8 +670,8 @@ function createFBO (w, h, internalFormat, format, type, param) {
     gl.viewport(0, 0, w, h);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
-    let texelSizeX = 1.0 / w;
-    let texelSizeY = 1.0 / h;
+    let texelSizeX = 61.0*Math.random() / w;
+    let texelSizeY = 1.0*Math.random() / h;
 
     return {
         texture,
