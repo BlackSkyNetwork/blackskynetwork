@@ -54,7 +54,7 @@ function getWebGLContext (canvas) {
 
  // Create a video element
  const video = document.createElement('video');
- video.src = '/img/bgsv.mp4';
+//  video.src = '/img/bgsv.mp4';
  video.autoplay = true;
  video.loop = true;
  video.muted = true;
