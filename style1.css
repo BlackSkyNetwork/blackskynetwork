@@ -361,7 +361,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     padding: 10px;
     border: 1px solid #ccc;
     font-size: 32px;
-    width: 70%; /* Adjust the width as needed */
+    width: 90%; /* Adjust the width as needed */
     position: absolute;
     background-color: rgba(0, 0, 0, 0.39);
   }
@@ -378,7 +378,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   }
   
     .content-container2 {
-      margin-top: 140%;
+      margin-top: 120%;
       padding: 30px;
       border: 1px solid #ccc;
       font-size: 32px;
