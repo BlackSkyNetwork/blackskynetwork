@@ -384,3 +384,50 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
       font-size: 32px;
       position: absolute;
     } 
+
+
+
+
+    .ellipses-container {
+      width: 70rem;
+      height: 70rem;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      top: 10.5rem;
+      text-align: center; 
+      margin-left: 11rem;
+  }
+  
+  .ellipses-container .sigil {
+      position: relative;
+      width: 70rem;
+      height: 70rem;
+      max-width: 640px;
+      max-height: 640px;
+      top: -11.5rem;
+      z-index: -2;
+  }
+
+
+
+
+  .social-container {
+    width: 7.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    z-index: 999;
+  }
+  .social-container .social__icon {
+    float: right;
+    cursor: pointer;
+  }
+  .social-container .social__icon.social__icon {
+    /* margin-left: 2.5rem; */
+    padding: 7.5px;
+  }
+  .social-container .social__icon.social__icon img {
+    height: 5rem;
+  }
