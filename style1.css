@@ -42,6 +42,7 @@ body {
   padding: 1.5rem 0;
   display: block;
   position: relative;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 }
 
 .heading-container {
@@ -63,7 +64,7 @@ body {
   /* margin-top: 50%; */
   height: 100%;
   z-index: 99;
-  }
+}
 
 .content-container1,
 .content-container2 {
@@ -73,21 +74,22 @@ body {
   font-size: 32px;
   width: 70%; /* Adjust the width as needed */
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.39);
 }
 
 
 
   .content-container1 {
     margin-top: 50%;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #ccc;
     font-size: 32px;
     position: absolute;
   }
 
   .content-container2 {
-    margin-top: 90%;
-    padding: 10px;
+    margin-top: 100%;
+    padding: 30px;
     border: 1px solid #ccc;
     font-size: 32px;
     position: absolute;

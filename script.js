@@ -35,7 +35,7 @@ function pointerPrototype () {
     this.deltaY = 0;
     this.down = false;
     this.moved = false;
-    this.color = [30, 0, 300];
+    this.color = [0, 0, 0];
 }
 
 let pointers = [];
@@ -397,7 +397,7 @@ const splatShader = compileShader(gl.FRAGMENT_SHADER, `
         p.x *= aspectRatio;
         vec3 splat = exp(-dot(p, p) / radius) * color;
         vec3 base = texture2D(uTarget, vUv).xyz;
-        gl_FragColor = vec4(base + splat, 1.0);
+        gl_FragColor = vec4(base + splat, 0.97); /*==================================*/
     }
 `);
 
