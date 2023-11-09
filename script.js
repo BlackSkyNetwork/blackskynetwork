@@ -17,11 +17,11 @@ let config = {
     VELOCITY_DISSIPATION: 2,
     PRESSURE: 10.1, //0.1
     PRESSURE_ITERATIONS: 120,
-    CURL: 112,
-    SPLAT_RADIUS: 0.05,
-    SPLAT_FORCE: 100,
+    CURL: 12*Math.random(),
+    SPLAT_RADIUS: 0.305,
+    SPLAT_FORCE: 10,
     SHADING: true,
-    COLOR_UPDATE_SPEED: 0.06,
+    COLOR_UPDATE_SPEED: 0.006,
     BACK_COLOR: { r: 0, g: 0, b: 0 },
 }
 

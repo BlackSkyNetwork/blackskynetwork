@@ -1,71 +1,99 @@
 html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-size: 1.4rem;
-    font-family: 'Inter', sans-serif;
-
-  }
-  
-  /* =14px */
-  h1 {
-    font-size: 2.4rem;
-  }
-  
-  /* =24px */
-  .container__item {
-    margin: 0 auto 40px;
-  }
-
-  .fluid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -11111; /* Устанавливаем отрицательное значение z-index, чтобы поместить его на задний слой */
+  font-size: 62.5%;
 }
 
-  
-  .landing-page-container {
-    width: 100%;
-    min-height: 100%;
-    height: 90rem;
-    /* background-image: url("img/bg.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
-    color: #ffffff;
-  }
-  
-  .content__wrapper {
-    max-width: 1200px;
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .header {
-    width: 100%;
-    height: 2rem;
-    padding: 4.5rem 0;
-    display: block;
-    
-  }
-
-  .heading-container {
-    font-size: 60px;
-    position: absolute;
-  
+body {
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
 }
 
 
+
+.landing-page-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto; /* Enable scrolling */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+}
+
+.content__wrapper {
+  max-width: 1200px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
   
+}
+
+.content-container {
+  margin-top: 60px; /* Adjust as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  position: relative;
+}
   
-  .menu-icon {
+.header {
+  width: 100%;
+  height: 12rem;
+  padding: 1.5rem 0;
+  display: block;
+  position: relative;
+}
+
+.heading-container {
+  font-size: 10vw; /* Use viewport width as a unit for responsive font size */
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vw; /* Adjust padding using vw unit */
+  margin-top: 30vh; /* Use viewport height as a unit for margin */
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Optional: center the columns horizontally */
+  /* margin-top: 50%; */
+  height: 100%;
+  z-index: 99;
+  }
+
+.content-container1,
+.content-container2 {
+  margin-top: 20px; /* Adjust the spacing between the containers */
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  width: 70%; /* Adjust the width as needed */
+  position: absolute;
+}
+
+
+
+  .content-container1 {
+    margin-top: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 32px;
+    position: absolute;
+  }
+
+  .content-container2 {
+    margin-top: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 32px;
+    position: absolute;
+  } 
+ 
+    .menu-icon {
     width: 2.5rem;
     height: 1.5rem;
     display: inline-block;
@@ -78,6 +106,12 @@ html {
     font-size: large;
   }
   
+ 
+ 
+ 
+ 
+ 
+ 
   .menu-icon__line {
     width: 1.5rem;
     height: 0.2rem;
@@ -100,7 +134,12 @@ html {
     top: -1.8rem;
   }
   
-  .heading {
+  
+  
+  
+  
+  
+  /* .heading {
     width: 90%;
     font-size: 2rem;
     font-weight: bold;
@@ -108,12 +147,11 @@ html {
     line-height: 1.7rem;
     margin: 0 auto;
     text-align: center;
-  }
+  } */
   
   .social-container {
     width: 7.25rem;
     list-style: none;
-    overflow: hidden;
     padding: 0;
     margin: 0;
     float: right;
@@ -137,8 +175,6 @@ html {
     z-index: -111; 
 }
 
-
-
   
   .coords {
     font-size: 1rem;
@@ -149,7 +185,7 @@ html {
     top: 40%;
     letter-spacing: 0.2rem;
     left: -11.5rem;
-    margin: 0;
+    margin-top: 10%;
     font-size: 1.5rem;
   }
   
@@ -160,7 +196,8 @@ html {
     margin: 0 auto;
     position: relative;
     top: 10.5rem;
-    text-align: center; /* Добавьте это свойство для центрирования текста */
+    text-align: center; 
+    margin-left: 60rem;
 }
 
 .ellipses-container .sigil {
@@ -170,6 +207,7 @@ html {
     max-width: 640px;
     max-height: 640px;
     /* top: 8.5rem; */
+    z-index: -2;
 }
 
   
@@ -178,6 +216,7 @@ html {
     position: absolute;
     top: 0;
     border-style: solid;
+    
   }
   
   .ellipses__outer--thin {
@@ -234,16 +273,18 @@ html {
     transform: translateY(-50%);
   }
   
-  .scroller {
+  /* .scroller {
     width: 7.5rem;
     display: inline-block;
     float: right;
     position: relative;
     top: -15%;
     transform: translateY(50%);
-    overflow: hidden;
-  }
-  .scroller .page-title {
+    
+  } */
+ 
+ 
+  /* .scroller .page-title {
     letter-spacing: 0.5rem;
     display: inline-block;
     float: left;
@@ -278,7 +319,7 @@ html {
     float: right;
     background-color: #ffffff;
     top: 1rem;
-  }
+  } */
   
   @-webkit-keyframes ellipsesRotate {
     0% {
