@@ -85,13 +85,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   border: 1px solid #ccc;
   font-size: 32px;
   position: absolute;
-  transition: border-width 0.3s; /* Add a smooth transition effect */
+  
 }
-
-.content-container1:hover {
-  border-width: 1.1px; /* Increase border width on hover */
-}
-
 
   .content-container2 {
     margin-top: 100%;
@@ -281,53 +276,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     transform: translateY(-50%);
   }
   
-  /* .scroller {
-    width: 7.5rem;
-    display: inline-block;
-    float: right;
-    position: relative;
-    top: -15%;
-    transform: translateY(50%);
-    
-  } */
- 
- 
-  /* .scroller .page-title {
-    letter-spacing: 0.5rem;
-    display: inline-block;
-    float: left;
-    margin-top: 1rem;
-  }
-  .scroller .timeline {
-    width: 1.5rem;
-    height: 9rem;
-    display: inline-block;
-    float: right;
-  }
-  .scroller .timeline .timeline__unit {
-    width: 100%;
-    height: 0.1rem;
-    display: block;
-    background-color: #ffffff;
-    margin: 0 0 2rem;
-    opacity: 0.2;
-  }
-  .scroller .timeline .timeline__unit.timeline__unit--active {
-    opacity: 1;
-  }
-  .scroller .timeline .timeline__unit.timeline__unit--active:after {
-    opacity: 0.2;
-  }
-  .scroller .timeline .timeline__unit:after {
-    content: "";
-    width: 70%;
-    height: 0.1rem;
-    display: block;
-    position: relative;
-    float: right;
-    background-color: #ffffff;
-    top: 1rem;
-  } */
+
   
   @-webkit-keyframes ellipsesRotate {
     0% {
@@ -362,3 +311,76 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
       transform: rotate(360deg);
     }
   }
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .content__wrapper {
+      width: 100%;
+    }
+  
+
+    .header {
+      width: 100%;
+      height: 12rem;
+      padding: 1.5rem 0;
+      display: block;
+      position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
+    }
+    
+    .heading-container {
+      font-size: 10vw; /* Use viewport width as a unit for responsive font size */
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2vw; /* Adjust padding using vw unit */
+      margin-top: -10vh; /* Use viewport height as a unit for margin */
+    }
+
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: center the columns horizontally */
+    /* margin-top: 50%; */
+    height: 100%;
+    z-index: 99;
+    margin-top: 30rem;
+  }
+  
+  .content-container1,
+  .content-container2 {
+    margin-top: 20px; /* Adjust the spacing between the containers */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 32px;
+    width: 70%; /* Adjust the width as needed */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.39);
+  }
+  
+  
+  
+  .content-container1 {
+    margin-top: 50%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    font-size: 32px;
+    position: absolute;
+    
+  }
+  
+    .content-container2 {
+      margin-top: 140%;
+      padding: 30px;
+      border: 1px solid #ccc;
+      font-size: 32px;
+      position: absolute;
+    } 
