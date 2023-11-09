@@ -79,13 +79,19 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
 
-  .content-container1 {
-    margin-top: 50%;
-    padding: 30px;
-    border: 1px solid #ccc;
-    font-size: 32px;
-    position: absolute;
-  }
+.content-container1 {
+  margin-top: 50%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  position: absolute;
+  transition: border-width 0.3s; /* Add a smooth transition effect */
+}
+
+.content-container1:hover {
+  border-width: 1.1px; /* Increase border width on hover */
+}
+
 
   .content-container2 {
     margin-top: 100%;
