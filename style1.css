@@ -317,6 +317,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
   @media only screen and (max-width: 768px) {
+    
     .content__wrapper {
       width: 100%;
     }
@@ -342,8 +343,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
       margin-top: -10vh; /* Use viewport height as a unit for margin */
     }
 
-  }
-
+  
 
   .content {
     display: flex;
@@ -431,3 +431,5 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   .social-container .social__icon.social__icon img {
     height: 5rem;
   }
+
+}
