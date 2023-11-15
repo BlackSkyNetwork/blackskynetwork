@@ -333,12 +333,14 @@ body {
   /* Лэндинг-страница */
 
   .landing-page-container {
-    min-height: 100vh; /* Уменьшение минимальной высоты */
+    min-height: 100vh;
+    
   }
 
   .content__wrapper {
     width: 100%; /* Занимает 100% ширины экрана */
     padding: 2rem; /* Добавление отступов */
+    justify-content: center;
   }
 
   .header {
@@ -349,16 +351,16 @@ body {
     font-size: 8vw; /* Уменьшение размера шрифта */
     margin-top: 5vh; /* Уменьшение верхнего отступа */
     position: relative;
-    margin-left: 5%;
+    margin-left: 0%;
     font-size: 7rem;
   }
 
   .content-container,
   .content-container1,
   .content-container2 {
-    width: 99%; /* Занимает 90% ширины экрана */
+    width: 90%; /* Занимает 90% ширины экрана */
     margin-top: -221px;
-    margin-bottom: 221px;
+    margin-bottom: 251px;
     padding: 15px; /* Увеличение отступов */
     font-size: 18px; /* Уменьшение размера шрифта */
     position: relative; 
@@ -367,7 +369,7 @@ body {
 
   .coords {
     font-size: 1.7rem; /* Уменьшение размера шрифта */
-    top: 0; 
+    top: 1; 
     margin-top: 25%; /* Уменьшение верхнего отступа */
     position: absolute;
   }
@@ -375,13 +377,15 @@ body {
   .ellipses-container {
     width: 100vw; /* Занимает 80% ширины экрана */
     height: 100vw; /* Занимает 80% высоты экрана */
-    margin-left: 0; /* Убираем отступ слева */
-    margin-top: 5rem; /* Увеличение верхнего отступа */
+    margin-left: 1rem; /* Убираем отступ слева */
+    margin-top: -1rem; /* Увеличение верхнего отступа */
   }
 
   .ellipses-container .sigil {
     width: 100vw; /* Занимает 80% ширины экрана */
     height: 100vw; /* Занимает 80% высоты экрана */
+    margin-left: 1rem;
+    margin-top: -15rem;
   }
 }
 
