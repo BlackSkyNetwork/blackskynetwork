@@ -315,121 +315,69 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
 
+/* Общие стили */
 
-  @media only screen and (max-width: 768px) {
-    
-    .content__wrapper {
-      width: 100%;
-    }
-  
+html {
+  font-size: 62.5%;
+}
 
-    .header {
-      width: 100%;
-      height: 12rem;
-      padding: 1.5rem 0;
-      display: block;
-      position: relative;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
-    }
-    
-    .heading-container {
-      font-size: 10vw; /* Use viewport width as a unit for responsive font size */
-      position: absolute;
-      z-index: -1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 2vw; /* Adjust padding using vw unit */
-      margin-top: -10vh; /* Use viewport height as a unit for margin */
-    }
+body {
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+}
 
-  
+/* Медиа-запрос для мобильных устройств */
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Optional: center the columns horizontally */
-    /* margin-top: 50%; */
-    height: 100%;
-    z-index: 99;
-    margin-top: 30rem;
+@media only screen and (max-width: 768px) {
+
+  /* Лэндинг-страница */
+
+  .landing-page-container {
+    min-height: auto; /* Уменьшение минимальной высоты */
   }
-  
+
+  .content__wrapper {
+    width: 100%; /* Занимает 100% ширины экрана */
+    padding: 2rem; /* Добавление отступов */
+  }
+
+  .header {
+    height: 8rem; /* Уменьшение высоты шапки */
+  }
+
+  .heading-container {
+    font-size: 8vw; /* Уменьшение размера шрифта */
+    margin-top: 1vh; /* Уменьшение верхнего отступа */
+  }
+
+  .content-container,
   .content-container1,
   .content-container2 {
-    margin-top: 20px; /* Adjust the spacing between the containers */
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 32px;
-    width: 90%; /* Adjust the width as needed */
-    position: absolute;
+    width: 90%; /* Занимает 90% ширины экрана */
+    margin-top: 20px;
+    padding: 15px; /* Увеличение отступов */
+    font-size: 18px; /* Уменьшение размера шрифта */
+    position: static; /* Изменение позиции */
     background-color: rgba(0, 0, 0, 0.39);
   }
-  
-  
-  
-  .content-container1 {
-    margin-top: 50%;
-    padding: 30px;
-    border: 1px solid #ccc;
-    font-size: 32px;
-    position: absolute;
-    
+
+  .coords {
+    font-size: 1rem; /* Уменьшение размера шрифта */
+    top: auto; /* Изменение позиции */
+    margin-top: 5%; /* Уменьшение верхнего отступа */
   }
-  
-    .content-container2 {
-      margin-top: 120%;
-      padding: 30px;
-      border: 1px solid #ccc;
-      font-size: 32px;
-      position: absolute;
-    } 
 
-
-
-
-    .ellipses-container {
-      width: 70rem;
-      height: 70rem;
-      border-radius: 50%;
-      margin: 0 auto;
-      position: relative;
-      top: 10.5rem;
-      text-align: center; 
-      margin-left: 11rem;
+  .ellipses-container {
+    width: 80vw; /* Занимает 80% ширины экрана */
+    height: 80vw; /* Занимает 80% высоты экрана */
+    margin-left: 0; /* Убираем отступ слева */
+    margin-top: 5rem; /* Увеличение верхнего отступа */
   }
-  
+
   .ellipses-container .sigil {
-      position: relative;
-      width: 70rem;
-      height: 70rem;
-      max-width: 640px;
-      max-height: 640px;
-      top: -11.5rem;
-      z-index: -2;
+    width: 80vw; /* Занимает 80% ширины экрана */
+    height: 80vw; /* Занимает 80% высоты экрана */
   }
-
-
-
-
-  .social-container {
-    width: 7.25rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-    z-index: 999;
-  }
-  .social-container .social__icon {
-    float: right;
-    cursor: pointer;
-  }
-  .social-container .social__icon.social__icon {
-    /* margin-left: 2.5rem; */
-    padding: 7.5px;
-  }
-  .social-container .social__icon.social__icon img {
-    height: 5rem;
-  }
-
 }
+
+  

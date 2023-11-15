@@ -45,3 +45,12 @@ main {
 }
 
 
+@media only screen and (max-width: 768px) {
+  /* Стили для мобильных устройств */
+  .content-container-desktop {
+    display: none;
+  }
+  .content-container-mobile {
+    display: block;
+  }
+}
