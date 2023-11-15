@@ -347,14 +347,18 @@ body {
 
   .heading-container {
     font-size: 8vw; /* Уменьшение размера шрифта */
-    margin-top: 1vh; /* Уменьшение верхнего отступа */
+    margin-top: 5vh; /* Уменьшение верхнего отступа */
+    position: relative;
+    margin-left: 5%;
+    font-size: 7rem;
   }
 
   .content-container,
   .content-container1,
   .content-container2 {
     width: 90%; /* Занимает 90% ширины экрана */
-    margin-top: 20px;
+    margin-top: -221px;
+    margin-bottom: 221px;
     padding: 15px; /* Увеличение отступов */
     font-size: 18px; /* Уменьшение размера шрифта */
     position: static; /* Изменение позиции */
@@ -362,21 +366,22 @@ body {
   }
 
   .coords {
-    font-size: 1rem; /* Уменьшение размера шрифта */
-    top: auto; /* Изменение позиции */
-    margin-top: 5%; /* Уменьшение верхнего отступа */
+    font-size: 1.7rem; /* Уменьшение размера шрифта */
+    /* top: auto; Изменение позиции */
+    margin-top: 25%; /* Уменьшение верхнего отступа */
+    position: absolute;
   }
 
   .ellipses-container {
-    width: 80vw; /* Занимает 80% ширины экрана */
-    height: 80vw; /* Занимает 80% высоты экрана */
+    width: 180vw; /* Занимает 80% ширины экрана */
+    height: 180vw; /* Занимает 80% высоты экрана */
     margin-left: 0; /* Убираем отступ слева */
     margin-top: 5rem; /* Увеличение верхнего отступа */
   }
 
   .ellipses-container .sigil {
-    width: 80vw; /* Занимает 80% ширины экрана */
-    height: 80vw; /* Занимает 80% высоты экрана */
+    width: 180vw; /* Занимает 80% ширины экрана */
+    height: 180vw; /* Занимает 80% высоты экрана */
   }
 }
 
