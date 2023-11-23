@@ -15,7 +15,7 @@ html, body {
   position: absolute;
   z-index: -1;
   width: 100vw;
-  height: 200vh; /* Установите значение, которое вам подходит */
+  height: 100vh; /* Установите значение, которое вам подходит */
   background-color: #000;
 }
 
@@ -26,7 +26,7 @@ html, body {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
 }
 
 .text-container {
