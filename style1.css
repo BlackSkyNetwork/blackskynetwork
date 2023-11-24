@@ -16,6 +16,47 @@ body {
   font-display: swap;
 }
 
+/*menu                */
+
+.my-menu-list {
+  list-style-type: none;
+  margin-top: 3rem;
+  padding: 0.7em;
+  overflow: hidden;
+  background-color: #c22dcf00;
+  text-align: center;
+  border-radius: 0px;
+  border: 2px dotted #ffffff4b;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-menu-item {
+  display: inline-block;
+}
+
+.my-menu-item a {
+  color: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 1.3s ease; /* добавлено свойство transition */
+}
+
+.my-menu-item a:hover {
+  background-color: #C12DCF;
+  border-radius: 0px;
+  border: 0px solid #c22dcf4f;
+}
+
+
+
+
+
+
+/*menu                */
+
 
 .landing-page-container {
   width: 100%;
@@ -59,7 +100,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   max-width: 250px;
   max-height: 250px;
   border: 2px solid #fff;
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
   margin-right: 1px; /* Optional: Add some margin between the image and text */
   margin-bottom: -20px;
