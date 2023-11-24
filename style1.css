@@ -25,7 +25,7 @@ body {
   overflow: hidden;
   background-color: #c22dcf00;
   text-align: center;
-  border-radius: 0px;
+  border-radius: 30px;
   border: 2px dotted #ffffff4b;
   width: 100%;
   margin-left: auto;
@@ -34,6 +34,7 @@ body {
 
 .my-menu-item {
   display: inline-block;
+  
 }
 
 .my-menu-item a {
@@ -46,7 +47,7 @@ body {
 
 .my-menu-item a:hover {
   background-color: #C12DCF;
-  border-radius: 0px;
+  border-radius: 30px;
   border: 0px solid #c22dcf4f;
 }
 
