@@ -40,19 +40,21 @@ body {
 }
 
 .my-menu-item a {
-  color: #C12DCF;
+  color: #c22dcf00;
   padding: 1em;
   text-decoration: none;
   font-size: 32px;
-  transition: background-color 1.3s ease;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #C12DCF;
+  
 }
 
 .my-menu-item a:hover {
-  /* background-color: #C12DCF;
-  border-radius: 0px;*/
-  /* border-bottom: 3px solid rgb(255, 255, 255); */
-  color: #ffffff;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  color: #ffffff00;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
 }
 
 
@@ -201,7 +203,9 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    color: #000000;
+    color: #00000000;
+    font-size: 6vw;
+    margin-bottom: 0.5vw;
   }
  
  
