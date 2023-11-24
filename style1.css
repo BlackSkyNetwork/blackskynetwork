@@ -25,11 +25,13 @@ body {
   overflow: hidden;
   background-color: #c22dcf00;
   text-align: center;
-  border-radius: 30px;
-  border: 2px dotted #ffffff4b;
+  border-radius: 11px;
+  border: 0px dotted #ffffff4b;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  /* border-bottom: 1px solid rgb(255, 255, 255) */
+ 
 }
 
 .my-menu-item {
@@ -38,17 +40,19 @@ body {
 }
 
 .my-menu-item a {
-  color: #ffffff;
+  color: #C12DCF;
   padding: 1em;
   text-decoration: none;
-  font-size: large;
-  transition: background-color 1.3s ease; /* добавлено свойство transition */
+  font-size: 32px;
+  transition: background-color 1.3s ease;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .my-menu-item a:hover {
-  background-color: #C12DCF;
-  border-radius: 30px;
-  border: 0px solid #c22dcf4f;
+  /* background-color: #C12DCF;
+  border-radius: 0px;*/
+  /* border-bottom: 3px solid rgb(255, 255, 255); */
+  color: #ffffff;
 }
 
 
@@ -126,6 +130,9 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   transform: translate(-50%, -50%);
   padding: 2vw; /* Adjust padding using vw unit */
   margin-top: 30vh; /* Use viewport height as a unit for margin */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: #0000009b;
 }
 
 
@@ -155,10 +162,14 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 .content-container1 {
   margin-top: 50%;
   padding: 30px;
+  padding-top: 10px;
   /* border: 1px solid #ccc; */
   font-size: 32px;
   position: absolute;
   line-height: 135%;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 11px;
   
 }
 
@@ -183,10 +194,15 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     display: inline-block;
     float: left;
     font-size: large;
+    
   }
   
  
- 
+  h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: #000000;
+  }
  
  
  
