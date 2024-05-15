@@ -135,13 +135,18 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   overflow: hidden;
   margin-right: 1px; /* Optional: Add some margin between the image and text */
   margin-bottom: -20px;
-  transition: transform 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease; /* Transition for transform, opacity, and margin-top */
+  transition: all 0.3s ease-in-out; /* Transition for transform, opacity, and margin-top */
 }
 
 .image-container:hover {
   transform: scale(1.2); /* Increase the size by 20% (adjust as needed) */
-  opacity: 0.5; /* Make the object 50% transparent */
+  /* opacity: 0.5; Make the object 50% transparent */
   margin-top: 100px; /* Move the object down by 100 pixels (adjust as needed) */
+  box-shadow: #a720d9 0px 60px 30px -10px;
+  border-color: #a720d9;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.3s ease-in-out;
 }
 
 
