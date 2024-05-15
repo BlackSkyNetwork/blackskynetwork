@@ -13,8 +13,8 @@ html, body {
 
 .canvas-wrapper {
   position: absolute;
-  z-index: -1;
-  width: 100vw;
+  z-index: -10;
+  width: 100%;
   height: 100vh; /* Установите значение, которое вам подходит */
   background-color: #000;
 }
@@ -22,7 +22,7 @@ html, body {
 .canvas-wrapper #fluid {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 main {
