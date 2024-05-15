@@ -147,6 +147,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   border-width: 1px;
   border-style: solid;
   transition: all 0.3s ease-in-out;
+  
 }
 
 
@@ -451,11 +452,11 @@ body {
   font-family: 'VCR OSD Mono';
 }
 
-/* Медиа-запрос для мобильных устройств */
+
 
 @media only screen and (max-width: 768px) {
 
-  /* Лэндинг-страница */
+  
 
   .landing-page-container {
     min-height: 100vh;
@@ -463,33 +464,44 @@ body {
   }
 
 
-
   .my-menu-list {
-    width: 50%;
-    margin-top: -2rem;
-    margin-left: -3rem;
+    width: 70%;
+    position:absolute;
+    /* margin-top: -2rem;
+    margin-left: -3rem; */
+    margin-left: 1.5rem;
   }
 
+
+  .my-menu-list:active {
+    box-shadow: none;
+    border-color: none;
+    border-width: 1px;
+    border-style: solid;
+    transition: all 0.3s ease-in-out;
+  }
+
+
   .my-menu-item {
-    font-size: 1.5rem;
+   font-size: 1.5rem;
    
   }
 
 
   .content__wrapper {
-    width: 100%; /* Занимает 100% ширины экрана */
-    padding: 2rem; /* Добавление отступов */
+    width: 100%; 
+    padding: 0rem;
     justify-content: center;
   }
 
   .header {
-    height: 9rem; /* Уменьшение высоты шапки */
-    /* margin-top: 13rem; */
+    height: 9rem; 
+    margin-top: 9rem;
   }
 
   .heading-container {
-    font-size: 8vw; /* Уменьшение размера шрифта */
-    margin-top: 16vh; /* Уменьшение верхнего отступа */
+    font-size: 8vw;
+    margin-top: 16vh; 
     position: relative;
     margin-left: 0%;
     font-size: 7rem;
@@ -498,16 +510,18 @@ body {
   .content-container,
   .content-container1,
   .content-container2 {
-    width: 80%; /* Занимает 90% ширины экрана */
+    width: 80%;
     margin-top: -221px;
     margin-bottom: 251px;
-    padding: 15px; /* Увеличение отступов */
-    font-size: 18px; /* Уменьшение размера шрифта */
+    padding: 15px; 
+    font-size: 18px; 
     position: relative; 
     background-color: rgba(0, 0, 0, 0.69);
   }
 
-
+  .content-container1 {
+    margin-top: -14rem;
+  }
 
 .image-container {
   margin-bottom: 2rem;
