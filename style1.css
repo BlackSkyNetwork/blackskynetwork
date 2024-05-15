@@ -457,6 +457,20 @@ body {
     
   }
 
+
+
+  .my-menu-list {
+    width: 50%;
+    margin-top: -2rem;
+    margin-left: -3rem;
+  }
+
+  .my-menu-item {
+    font-size: 1.5rem;
+   
+  }
+
+
   .content__wrapper {
     width: 100%; /* Занимает 100% ширины экрана */
     padding: 2rem; /* Добавление отступов */
@@ -464,12 +478,13 @@ body {
   }
 
   .header {
-    height: 8rem; /* Уменьшение высоты шапки */
+    height: 9rem; /* Уменьшение высоты шапки */
+    /* margin-top: 13rem; */
   }
 
   .heading-container {
     font-size: 8vw; /* Уменьшение размера шрифта */
-    margin-top: 5vh; /* Уменьшение верхнего отступа */
+    margin-top: 16vh; /* Уменьшение верхнего отступа */
     position: relative;
     margin-left: 0%;
     font-size: 7rem;
@@ -478,7 +493,7 @@ body {
   .content-container,
   .content-container1,
   .content-container2 {
-    width: 90%; /* Занимает 90% ширины экрана */
+    width: 80%; /* Занимает 90% ширины экрана */
     margin-top: -221px;
     margin-bottom: 251px;
     padding: 15px; /* Увеличение отступов */
@@ -487,11 +502,19 @@ body {
     background-color: rgba(0, 0, 0, 0.69);
   }
 
+
+
+.image-container {
+  margin-bottom: 2rem;
+}
+
+
   .coords {
     font-size: 1.7rem; /* Уменьшение размера шрифта */
     top: 1; 
     margin-top: 25%; /* Уменьшение верхнего отступа */
     position: absolute;
+    display: none;
   }
 
   .ellipses-container {
