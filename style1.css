@@ -9,12 +9,25 @@ body {
 
 @font-face {
   font-family: 'VCR OSD Mono';
-  src: url('VCROSDMono.woff2') format('woff2'),
-      url('VCROSDMono.woff') format('woff');
+  src: url('fonts/VCROSDMono.woff2') format('woff2'),
+      url('fonts/VCROSDMono.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+
+@font-face {
+  font-family: 'Aqala Display FREE';
+  src: url('fonts/AqalaDisplayFREE-Regular.woff2') format('woff2'),
+      url('fonts/AqalaDisplayFREE-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 
 /*menu                */
 
@@ -153,6 +166,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
 .heading-container {
+  font-family: 'Aqala Display FREE';
   font-size: 14vw; /* Use viewport width as a unit for responsive font size */
   line-height: 85%;
   position: absolute;
