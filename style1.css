@@ -27,81 +27,6 @@ body {
 }
 
 
-
-
-/*menu                */
-
-
-.my-menu-list {
-  list-style-type: none;
-  /* margin-top: 3rem; */
-  padding: 0.7em;
-  overflow: hidden;
-  background-color: #000000;
-  text-align: center;
-  border-radius: 2px;
-  /* border: 0px dotted #ffffff4b; */
-  /* width: 100%;
-  margin-left: auto;
-  margin-right: auto; */
-  position: fixed;
-  /* justify-content: center; */
-  /* border-bottom: 1px solid rgb(255, 255, 255) */
- z-index: 99;
- box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
- transition: all 0.3s ease-in-out;
- border-color: #000000;
-  border-width: 1px;
-  border-style: solid;
-}
-
-
-.my-menu-list:hover {
-  box-shadow: #a720d9 0px 20px 30px -10px;
-  border-color: #a720d9;
-  border-width: 1px;
-  border-style: solid;
-  transition: all 0.3s ease-in-out;
-}
-
-
-
-
-
-.my-menu-item {
-  display: inline-block;
-  float: left;
-  
-}
-
-
-
-.my-menu-item a {
-  color: #c22dcf00;
-  padding: 1em;
-  text-decoration: none;
-  font-size: 32px;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C12DCF;
-  
-}
-
-.my-menu-item a:hover {
-  border-bottom: 3px solid rgb(255, 255, 255);
-  color: #ffffff00;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: 1px;
-}
-
-
-
-
-
-
-/*menu                */
-
-
 .landing-page-container {
   width: 100%;
   min-height: 100vh;
@@ -172,7 +97,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   position: absolute;
   z-index: -1;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
   padding: 2vw; /* Adjust padding using vw unit */
   margin-top: 30vh; /* Use viewport height as a unit for margin */
@@ -249,9 +174,6 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   visibility: visible;
   opacity: 1;
 }
-
-
-
 
 
 
