@@ -263,7 +263,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     cursor: pointer;
   }
   .social-container .social__icon.social__icon {
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     padding: 7.5px;
   }
   .social-container .social__icon.social__icon img {
