@@ -72,7 +72,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   border-radius: 100%;
   overflow: hidden;
   margin-right: 1px; /* Optional: Add some margin between the image and text */
-  margin-bottom: -20px;
+  margin-bottom: -4rem;
+  margin-top: 15rem;
   transition: all 0.3s ease-in-out; /* Transition for transform, opacity, and margin-top */
 }
 
@@ -131,7 +132,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
 .content-container1 {
-  margin-top: 45%;
+  margin-top: 50%;
   padding: 30px;
   padding-top: 10px;
   /* border: 1px solid #ccc; */
@@ -147,7 +148,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
 
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-block;
   text-decoration: underline;
@@ -173,12 +174,12 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 
 
   .content-container2 {
-    margin-top: 130%;
+    margin-top: 100%;
     padding: 30px;
     /* border: 1px solid #ccc; */
     font-size: 32px;
@@ -209,9 +210,55 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     font-size: 6vw;
     margin-bottom: 0.5vw;
   }
+
+  h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: #00000000;
+    font-size: 5vw;
+    margin-bottom: 0.5vw;
+  }
+
+
+
+  h3 {
+    color: #ffffff;
+    font-size: 4vw;
+    font-weight: 200;
+    margin-bottom: 1.5vw;
+    text-align: center;
+  }
+
+
+  h4 {
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: 200;
+    margin-bottom: 1.5vw;
+    text-align: center;
+  }
+
+
+  .copyHeader {
+    width: 100%;
+    /* background-color: #a720d9; */
+  }
+
+  .infoHeader {
+    color: #ffffff;
+    font-size: 2vw;
+    margin-top: -3.5vw;
+    margin-right: -8rem;
+    position: relative;
+    text-align: right;
+    
+  }
  
- 
- 
+  .internalLink {
+    font-size: 6rem;
+    text-align: left;
+    margin-top: 2rem;
+  }
  
   .menu-icon__line {
     width: 1.5rem;

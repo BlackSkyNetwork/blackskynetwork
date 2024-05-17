@@ -7,6 +7,18 @@ html, body {
   background-color: #000;
 }
 
+
+a {
+  color: #A720D9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+
 ::-webkit-scrollbar {
   width: 0;
 }
