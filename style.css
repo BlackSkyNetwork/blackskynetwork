@@ -9,13 +9,16 @@ html, body {
 
 
 a {
-  color: #A720D9;
+  color: #a820d900;
   text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #C12DCF;
 }
 
 a:hover {
   color: white;
-  text-decoration: underline; /* Optional: add underline on hover */
+  border-color: #ffffff;
+  text-decoration: none; /* Optional: add underline on hover */
 }
 
 

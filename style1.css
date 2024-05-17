@@ -266,6 +266,15 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     font-size: 6rem;
     text-align: left;
     margin-top: 2rem;
+    box-shadow: #a720d9 0px 20px 30px -10px;
+  border-color: #a720d9;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+  color: #c22dcf00;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #C12DCF;
   }
  
   .menu-icon__line {
