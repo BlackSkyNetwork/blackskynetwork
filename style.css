@@ -88,7 +88,18 @@ h5 {
 
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 4px;
+}
+
+/* Фон скроллбара */
+::-webkit-scrollbar-track {
+  background: #a820d95f;
+}
+
+/* Бегунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background: #a820d9b8;
+  border-radius: 2px; /* Опционально: сделать углы бегунка скругленными */
 }
 
 .canvas-wrapper {
