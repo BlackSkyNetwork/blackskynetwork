@@ -77,6 +77,15 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   transition: all 0.3s ease-in-out; /* Transition for transform, opacity, and margin-top */
 }
 
+.image-container img {
+  /* width: 50%;
+  height: 50%; */
+  /* position: absolute; */
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%); /* Center the image inside the container */
+}
+
 .image-container:hover {
   transform: scale(1.2); /* Increase the size by 20% (adjust as needed) */
   /* opacity: 0.5; Make the object 50% transparent */
@@ -145,7 +154,20 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   
 }
 
-
+.content-container1_bottom {
+  padding: 30px;
+  padding-top: 2rem;
+  padding-bottom: -2rem;
+  /* border: 1px solid #ccc; */
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  line-height: 32px;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 11px;
+  
+}
 
 
 /* .tooltip {
@@ -203,60 +225,19 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   }
   
  
-  h1 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    color: #00000000;
-    font-size: 6vw;
-    margin-bottom: 0.5vw;
-  }
-
-  h2 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    color: #00000000;
-    font-size: 5vw;
-    margin-bottom: 0.5vw;
-  }
-
-
-
-  h3 {
-    color: #ffffff;
-    font-size: 4vw;
-    font-weight: 200;
-    margin-bottom: 1.5vw;
-    text-align: center;
-  }
-
-
-  h4 {
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight: 200;
-    margin-bottom: 1.5vw;
-    text-align: center;
-  }
-
-  h5 {
-    color: #ffffff;
-    font-size: 1vw;
-    font-weight: 200;
-    margin-bottom: 1.5vw;
-    text-align: center;
-  }
+  
 
 
   .copyHeader {
-    width: 100%;
+    width: max-content;
     /* background-color: #a720d9; */
   }
 
   .infoHeader {
     color: #ffffff;
     font-size: 2vw;
-    margin-top: -3.5vw;
-    margin-right: -8rem;
+    margin-top: -4.8vw;
+    margin-right: -15rem;
     position: relative;
     text-align: right;
     
@@ -275,7 +256,21 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   color: #c22dcf00;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #C12DCF;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  background-color: #000000;
   }
+
+ .internalLink:hover {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+   color: #ffffff00;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+ }
+
+
+
  
   .menu-icon__line {
     width: 1.5rem;
@@ -560,7 +555,7 @@ body {
   }
 
 .image-container {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 
