@@ -310,13 +310,14 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   position: absolute;
   z-index: -1;
   top: 50%;
-  left: 45%;
+  left: 44%;
   transform: translate(-50%, -50%);
   padding: 2vw; /* Adjust padding using vw unit */
   margin-top: 30vh; /* Use viewport height as a unit for margin */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: #0000009b;
+  
 }
 
 
