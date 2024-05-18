@@ -286,7 +286,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   /* position: absolute; */
   top: 10%;
   left: 10%;
-  transform: translate(-50%, -50%); /* Center the image inside the container */
+  transform: translate(-20%, -20%); /* Center the image inside the container */
 }
 
 .image-container:hover {
@@ -454,12 +454,13 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   border-color: #a720d9;
   border-width: 1px;
   border-style: solid;
+  border-radius: 2px;
   transition: all 0.3s ease-in-out;
   width: max-content;
   color: #c22dcf00;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #C12DCF;
-  padding-left: 2rem;
+  padding-left: 3rem;
   padding-right: 3rem;
   background-color: #000000;
   }
