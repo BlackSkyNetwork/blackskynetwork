@@ -571,6 +571,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     height: 50rem;
     max-width: 640px;
     max-height: 640px;
+    margin-top: 1rem;
     /* top: 8.5rem; */
     z-index: -2;
 }
