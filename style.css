@@ -7,12 +7,21 @@ html, body {
   background-color: #000;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'VCR OSD Mono';
+}
+
 
 a {
   color: #a820d900;
   text-decoration: none;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C12DCF;
+  -webkit-text-stroke-color: #FA35C3;
 }
 
 a:hover {
@@ -25,7 +34,7 @@ a:hover {
 
 .a1 {
   /* position: relative; */
-  color: #C12DCF;
+  color: #FA35C3;
   text-decoration: underline;
     
 }
@@ -98,7 +107,7 @@ h5 {
 
 /* Бегунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background: #a820d9b8;
+  background: #FA35C3;
   border-radius: 2px; /* Опционально: сделать углы бегунка скругленными */
 }
 
@@ -165,8 +174,8 @@ main {
 
 
 .my-menu-list:hover {
-  box-shadow: #a720d9 0px 20px 30px -10px;
-  border-color: #a720d9;
+  box-shadow: #FA35C3 0px 20px 30px -10px;
+  border-color: #FA35C3;
   border-width: 1px;
   border-style: solid;
   transition: all 0.3s ease-in-out;
@@ -187,7 +196,7 @@ main {
   font-size: 32px;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C12DCF;
+  -webkit-text-stroke-color: #FA35C3;
   
 }
 
@@ -293,8 +302,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   transform: scale(1.2); /* Increase the size by 20% (adjust as needed) */
   /* opacity: 0.5; Make the object 50% transparent */
   margin-top: 100px; /* Move the object down by 100 pixels (adjust as needed) */
-  box-shadow: #a720d9 0px 60px 30px -10px;
-  border-color: #a720d9;
+  box-shadow: #FA35C3 0px 60px 30px -10px;
+  border-color: #FA35C3;
   border-width: 1px;
   border-style: solid;
   transition: all 0.3s ease-in-out;
@@ -365,12 +374,16 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   /* border: 1px solid #ccc; */
   font-size: 24px;
   text-align: center;
-  position: absolute;
+  position: relative;
   line-height: 32px;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
   border-radius: 11px;
   
+}
+
+.bottom {
+  height: 100px;
 }
 
 
@@ -451,8 +464,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     font-size: 6rem;
     text-align: left;
     margin-top: 2rem;
-    box-shadow: #a720d9 0px 20px 30px -10px;
-  border-color: #a720d9;
+    box-shadow: #FA35C3 0px 20px 30px -10px;
+  border-color: #FA35C3;
   border-width: 1px;
   border-style: solid;
   border-radius: 2px;
@@ -460,7 +473,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
   width: max-content;
   color: #c22dcf00;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C12DCF;
+  -webkit-text-stroke-color: #FA35C3;
   padding-left: 3rem;
   padding-right: 3rem;
   background-color: #000000;
@@ -547,7 +560,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
     transform: rotate(-90deg) translateY(50%);
     float: left;
     position: relative;
-    top: 40%;
+    top: 23rem;
     letter-spacing: 0.2rem;
     left: -11.5rem;
     margin-top: 10%;
@@ -678,16 +691,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.716);
 
 
 
-/* Общие стили */
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.4rem;
-  font-family: 'VCR OSD Mono';
-}
 
 
 
@@ -791,17 +795,17 @@ body {
 }
 
   .coords {
-    font-size: 1.7rem; /* Уменьшение размера шрифта */
-    margin-top: 11rem; /* Уменьшение верхнего отступа */
+    font-size: 1.7rem; 
+    margin-top: 19rem; 
     position: absolute;
     display: none;
   }
 
   .ellipses-container {
-    width: 70vw; /* Занимает 80% ширины экрана */
-    height: 70vw; /* Занимает 80% высоты экрана */
-    margin-left: 4rem; /* Убираем отступ слева */
-    margin-top: 4rem; /* Увеличение верхнего отступа */
+    width: 70vw; 
+    height: 70vw;
+    margin-left: 4rem; 
+    margin-top: 4rem; 
   }
 
   .ellipses-container .sigil {
