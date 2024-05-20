@@ -779,7 +779,7 @@ main {
   
   
   h3 {
-   
+    font-size: 4rem;
   }
   
   
@@ -835,6 +835,7 @@ main {
   position: fixed;
   z-index: 99;
   background-color: #000000;
+  border-radius: 4px;
 }
 
 
@@ -844,6 +845,7 @@ main {
   display: none;
   background-color: #000000;
   z-index: 1000;
+  
 }
 
 .my-menu-list.active {
@@ -899,8 +901,8 @@ main {
   .content-container1,
   .content-container2 {
     width: 90%;
-    margin-top: -221px;
-    margin-bottom: 251px;
+    /* margin-top: -221px;
+    margin-bottom: 251px; */
     padding: 15px; 
     font-size: 18px; 
     position: relative; 
@@ -921,6 +923,10 @@ main {
 
 .image-container {
   margin-bottom: 2rem;
+}
+
+.sixTenets {
+  min-width: 100%;
 }
 
 .internalLink {
