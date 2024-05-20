@@ -234,15 +234,15 @@ main {
 
 .menu-toggle {
   display: none;
-  flex-direction: column;
+  /* flex-direction: column;
   cursor: pointer;
-  padding: 14px 20px;
+  padding: 14px 20px; */
 }
 
 .bar {
-  height: 3px;
-  width: 25px;
-  background-color: white;
+  /* height: fit-content;
+  width: fit-content; */
+  /* background-color: rgb(255, 0, 0); */
   margin: 4px 0;
 }
 
@@ -588,10 +588,10 @@ main {
   } */
   
   .social-container {
-    width: 7.25rem;
+    width: 7.7rem;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0rem;
     float: right;
     z-index: 999;
   }
@@ -750,22 +750,6 @@ main {
 
 
 
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 14px 20px;
-}
-
-.bar {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 4px 0;
-}
-
-
-
 
 
 
@@ -820,28 +804,59 @@ main {
 
 /*//////////MOB MENU/////////*/
 
-  .my-menu-list {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-}
-
-.my-menu-list.active {
-    display: flex;
+.bar{
+  
 }
 
 .menu-toggle {
-    display: flex;
+
+}
+
+.sigilSmallMenu {
+  width: 48px;
+  height: 48px;
+}
+
+.menuButton {
+  width: 300px;
+  flex-direction: row;
+  font-size: 45px;
+  /* background-color: #42956a; */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FA35C3;
+  color: #00000000;
+  gap: 1rem;
+  position: fixed;
+}
+
+
+.my-menu-list {
+  flex-direction: column;
+  width: fit-content;
+  display: none;
+  background-color: #000000;
+}
+
+.my-menu-list.active {
+  display: flex;
+}
+
+.menu-toggle {
+  display: flex;
 }
 
 .my-menu-item {
-    display: block;
-    text-align: left;
-    padding: 10px 0;
+  display: block;
+  text-align: left;
+  padding: 10px 0;
 }
 
 .my-menu-item a {
-    font-size: 24px;
+  font-size: 36px;
 }
 
 /*/////////////*/
@@ -866,7 +881,7 @@ main {
   }
 
   .heading-container {
-    margin-top: 13vh; 
+    margin-top: .5vh; 
     position: relative;
     margin-left: 4vw;
     font-size: 12rem;
@@ -915,18 +930,49 @@ main {
   }
 
   .ellipses-container {
-    width: 50vw; 
-    height: 50vw;
-    margin-left: 14rem; 
-    margin-top: -4rem; 
+    width: 70vw; 
+    height: 70vw;
+    margin-left: 18rem; 
+    margin-top: -10rem; 
   }
 
   .ellipses-container .sigil {
-    width: 50vw; 
-    height: 50vw;
-    /* margin-left: 4rem;
-    margin-top: 4rem; */
+    width: 70vw; 
+    height: 70vw;
+    /* margin-left: 4rem; */
+    /* margin-top: -11rem; */
   }
+
+
+  .social-container {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 7.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0rem;
+    float: right;
+    z-index: 999;
+    margin-right: 2rem;
+    margin-top: -10rem;
+  }
+
+  .social-container .social__icon {
+    float: right;
+    cursor: pointer;
+  }
+  .social-container .social__icon.social__icon {
+    margin-left: 1.5rem;
+    padding: 7.5px;
+  }
+  .social-container .social__icon.social__icon img {
+    height: 3rem;
+  }
+
+
+
+
 }
 
   
