@@ -818,7 +818,9 @@ main {
 }
 
 .menuButton {
-  width: 300px;
+  padding: 0.5rem;
+  padding-right: 1.5rem;
+  width: max-content;
   flex-direction: row;
   font-size: 45px;
   /* background-color: #42956a; */
@@ -831,6 +833,8 @@ main {
   color: #00000000;
   gap: 1rem;
   position: fixed;
+  z-index: 99;
+  background-color: #000000;
 }
 
 
@@ -839,6 +843,7 @@ main {
   width: fit-content;
   display: none;
   background-color: #000000;
+  z-index: 1000;
 }
 
 .my-menu-list.active {
