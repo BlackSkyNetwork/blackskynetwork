@@ -822,14 +822,14 @@ main {
   padding-right: 1.5rem;
   width: max-content;
   flex-direction: row;
-  font-size: 45px;
+  font-size: 32px;
   /* background-color: #42956a; */
   display: flex;
   align-items: center;
   justify-content: left;
   text-decoration: none;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FA35C3;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #ffffff;
   color: #00000000;
   gap: 1rem;
   position: fixed;
