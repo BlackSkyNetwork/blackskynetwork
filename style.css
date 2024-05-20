@@ -733,11 +733,17 @@ main {
 
 
 
+/*//////////////////////mobile styles////////////////////////////////////*/
 
 
 
+@media only screen and (max-width: 1250px) {
 
-@media only screen and (max-width: 768px) {
+
+  html, body {
+    margin: 0;
+    background-color: #000;
+  }
 
 
   h1 {
@@ -773,17 +779,16 @@ main {
 
 
   .my-menu-list {
-  
-    min-width: 100%;
+      min-width: 0%;
   }
 
 
   .my-menu-list:active {
-    box-shadow: none;
+    /* box-shadow: none;
     border-color: none;
     border-width: 1px;
     border-style: solid;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; */
   }
 
 
@@ -793,10 +798,18 @@ main {
   }
 
 
+  /* .canvas-wrapper {
+    padding: 0;
+    background-color: #555;
+  } */
+
   .content__wrapper {
     width: 100%; 
-    padding: 0rem;
+    padding: 2rem;
     justify-content: center;
+    max-width: 600px;
+    overflow: hidden;
+    /* background-color: #FA35C3; */
   }
 
   .header {
@@ -805,27 +818,37 @@ main {
   }
 
   .heading-container {
-    margin-top: 3vh; 
+    margin-top: 13vh; 
     position: relative;
-    margin-left: 2rem;
-    font-size: 10rem;
+    margin-left: 4vw;
+    font-size: 12rem;
+    width: auto;
+    height: auto;
+        
   }
 
   .content-container,
   .content-container1,
   .content-container2 {
-    width: 100%;
+    width: 90%;
     margin-top: -221px;
     margin-bottom: 251px;
     padding: 15px; 
     font-size: 18px; 
     position: relative; 
-    background-color: rgba(0, 0, 0, 0.69);
+    background-color: rgba(0, 0, 0, 0);
     margin: 0 auto;
   }
 
+
+  .content-container{
+    /* width: 100%; */
+  }
+
   .content-container1 {
-    margin-top: -14rem;
+    margin-top: -34rem;
+    /* width: 100%; */
+    
   }
 
 .image-container {
@@ -844,17 +867,17 @@ main {
   }
 
   .ellipses-container {
-    width: 70vw; 
-    height: 70vw;
-    margin-left: 4rem; 
-    margin-top: 4rem; 
+    width: 50vw; 
+    height: 50vw;
+    margin-left: 14rem; 
+    margin-top: -4rem; 
   }
 
   .ellipses-container .sigil {
-    width: 70vw; /* Занимает 80% ширины экрана */
-    height: 70vw; /* Занимает 80% высоты экрана */
-    margin-left: 4rem;
-    margin-top: 4rem;
+    width: 50vw; 
+    height: 50vw;
+    /* margin-left: 4rem;
+    margin-top: 4rem; */
   }
 }
 
