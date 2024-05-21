@@ -760,6 +760,8 @@ main {
   html, body {
     margin: 0;
     background-color: #000;
+    overflow-x: hidden;
+    width: 100%;
   }
 
 
@@ -870,11 +872,12 @@ main {
   } */
 
   .content__wrapper {
-    width: 100%; 
+    width: 100%
     padding: 2rem;
     justify-content: center;
     max-width: 600px;
     overflow: hidden;
+    
     /* background-color: #FA35C3; */
   }
 
@@ -916,6 +919,22 @@ main {
     /* width: 100%; */
     
   }
+
+
+  .copyHeader{
+    width: 100%;
+  
+
+  }
+  
+  .infoHeader{
+    position: relative;
+    /* margin: 0; */
+    text-align: left;
+font-size: 3rem;
+  }
+
+
 
 .image-container {
   margin-bottom: 2rem;
