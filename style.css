@@ -36,7 +36,6 @@ body {
   font-display: swap;
 }
 
-
 a {
   color: #a820d900;
   text-decoration: none;
@@ -387,6 +386,7 @@ main {
   padding: 30px;
   padding-top: 2rem;
   padding-bottom: -2rem;
+  margin-bottom: 4rem;
   /* border: 1px solid #ccc; */
   font-size: 24px;
   text-align: center;
@@ -396,10 +396,6 @@ main {
   border-bottom: 1px solid rgb(255, 255, 255);
   border-radius: 11px;
   
-}
-
-.bottom {
-  height: 100px;
 }
 
 
