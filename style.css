@@ -329,8 +329,8 @@ main {
   line-height: 85%;
   position: absolute;
   z-index: -1;
-  top: 45%;
-  left: 44%;
+  top: 65%;
+  left: 45%;
   transform: translate(-50%, -50%);
   padding: 2vw; /* Adjust padding using vw unit */
   margin-top: 30vh; /* Use viewport height as a unit for margin */
@@ -888,6 +888,7 @@ main {
 
   .heading-container {
     margin-top: .5vh; 
+    margin-bottom: -.5vh;
     position: relative;
     margin-left: 4vw;
     font-size: 12rem;
