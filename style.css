@@ -773,14 +773,14 @@ script {
 }
 
 .small-inner-content h3 {
-        font-size: 1.5em;
+    font-size: 1.5em;
 }
 
-#residency p {
+.large-inner-content p {
     font-size: 0.7em;
 }
 
-#residency {
+.large-inner-content {
     /* border: 1px solid white; */
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -788,12 +788,20 @@ script {
     margin: 1% auto 0;
 }
 
-#residency h1 {
+.large-inner-content h1 {
     text-align: center;
 }
 
+.mentors-inner .image-container {
+    display: inline-block;
+    margin-top: 5rem;
+}
 
-
+.image-text {
+    display: inline-block;
+    width: 65%;
+    padding-left: 5%;
+}
 
 /*//////////////////////mobile styles////////////////////////////////////*/
 
