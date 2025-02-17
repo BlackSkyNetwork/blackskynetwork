@@ -12,6 +12,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
     <script src="./script.js"></script>
     <script src="./menu.js"></script>
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -178,7 +181,8 @@
                             <p>Last call is February 21st 2025, but apply earlier if you can, as applicants will be
                                 accepted on a rolling basis. If your application is a fit, a video call will be
                                 scheduled within 14 days of submission. <a
-                                        href="https://hackmd.io/@blackskysociety/skylab01-application"><span class="a1">APPLY NOW</span></a>
+                                        href="https://blackskysociety.notion.site/19d97e3a828b8063a392f1e145aeadbb"><span
+                                        class="a1">APPLY NOW</span></a>
                             </p>
                         </div>
                         <div id="skylab-vibe" class="small-inner-content">
@@ -209,64 +213,103 @@
                                 </li>
                             </ul>
                             <h3 id="excursions">EXCURSIONS</h3>
-                            <ul>
-                                <li>
-                                    <b>Dalabelos Estate (25-minute drive):</b> Organic permaculture farm,
-                                    hotel, and farm-to-table restaurant.
+                            <!-- Add images to <div class="fotorama"></div> -->
+                            <div class="fotorama center-align" data-nav="thumbs" data-width="700"
+                                 data-maxwidth="100%"
 
-                                </li>
-                                <li>
-                                    <b>Psiloritis, Mount Ida (40-minute drive):</b> Highest mountain on Crete
-                                    at 8,058 feet, with a cave & rocky path to the summit for sea views.
-                                    <em>"According to Greek mythology, the Olympian high god Zeus was raised on these
-                                        slopes."</em>
-                                </li>
-                                <li>
-                                    <b>Melidoni Cave (25-minute drive):</b> Mystical caves and outdoor café.
-                                    <em>"The Melidoni cave is also called 'Gerondospilios.' It was used for religious
-                                        ceremonies. During the Minoan Civilization, it was a place of worship for Talos,
-                                        the bronze giant guardian of Crete who protected the island from enemies."</em>
+                                 data-allowfullscreen="true">
+                                <img src="img/skylab01/dalabelos.jpg" data-caption="Dalabelos Estate (25-minute drive):</b> Organic permaculture farm,
+                                    hotel, and farm-to-table restaurant." alt="Dalabelos Estate (25-minute drive):</b> Organic permaculture farm,
+                                    hotel, and farm-to-table restaurant."/>
+                                <img src="img/skylab01/CretaTrekking_Psiloritis-04.jpg"
+                                     data-caption="Psiloritis, Mount Ida (40-minute drive): Highest mountain on Crete at 8,058 feet, with a cave and a rocky path to the summit for sea views. According to Greek mythology, the Olympian high god Zeus was raised on these slopes."
+                                     alt="Psiloritis, Mount Ida"/>
+                                <img src="img/skylab01/melidoni_cave.jpg"
+                                     data-caption="Melidoni Cave (25-minute drive): Mystical caves and outdoor café. The Melidoni cave is also called 'Gerondospilios.' It was used for religious ceremonies. During the Minoan Civilization, it was a place of worship for Talos, the bronze giant guardian of Crete who protected the island from enemies."
+                                     alt="Melidoni Cave"/>
+                                <img src="img/skylab01/margarites.jpg"
+                                     data-caption="Margarites Village (25-minute drive): A super cute village with shops & restaurants. The locals here specialize in making ceramics!"
+                                     alt="Margarites Village"/>
+                                <img src="img/skylab01/eleutherna.jpg"
+                                     data-caption="Ancient Eleutherna (30-minute drive): 'During the ninth century BC, in sub-Mycenaean times, in the Geometric Period of the later Greek Dark Ages, Dorians colonized the city on a steep, naturally fortified ridge. The city's location made it a natural crossroads, as it lay between Kydonia on the northwest coast and Knossos, and between the shore, where it controlled its ports, Stavromenos and Panormos, and the great sanctuary cave near the peak of Ida, Idaion Andron.'"
+                                     alt="Ancient Eleutherna"/>
+                                <img src="img/skylab01/arkadi-monastery.jpg"
+                                     data-caption="Arkadi Monastery (45-minute drive): The Sacred Monastery of Arkadi is a historic Monastery of Crete founded by a monk named Arkadios. The constant and uninterrupted presence of the Monastery in the life of Crete for eight centuries is an integral part of the island's history."
+                                     alt="Arkadi Monastery"/>
+                                <img src="img/skylab01/geropotamas_beach.jpg"
+                                     data-caption="Geropotomas Beach"
+                                     alt="Geropotomas Beach"/>
+                                <img src="img/skylab01/spilies_beach.jpg"
+                                     data-caption="Spilies Beach"
+                                     alt="Spilies Beach"/>
+                                <img src="img/skylab01/karavostasi-beach.jpg"
+                                     data-caption="Karavostasi Beach"
+                                     alt="Karavostasi Beach"/>
+                                <img src="img/skylab01/knossos_top.jpg"
+                                     data-caption="Knossos Palace (75-minute drive)"
+                                     alt="Knossos Palace"/>
+                                <img src="img/skylab01/preveli_beach.webp"
+                                     data-caption="Preveli Beach (80-minute drive)"
+                                     alt="Preveli Beach"/>
+                            </div>
+                            <!--                            <ul>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Dalabelos Estate (25-minute drive):</b> Organic permaculture farm,-->
+                            <!--                                    hotel, and farm-to-table restaurant.-->
 
-                                </li>
-                                <li>
-                                    <b>Margarites Village (25-minute drive):</b> A super cute village with
-                                    shops & restaurants. The locals here specialize in making ceramics!
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Psiloritis, Mount Ida (40-minute drive):</b> Highest mountain on Crete-->
+                            <!--                                    at 8,058 feet, with a cave & rocky path to the summit for sea views.-->
+                            <!--                                    <em>"According to Greek mythology, the Olympian high god Zeus was raised on these-->
+                            <!--                                        slopes."</em>-->
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Melidoni Cave (25-minute drive):</b> Mystical caves and outdoor café.-->
+                            <!--                                    <em>"The Melidoni cave is also called 'Gerondospilios.' It was used for religious-->
+                            <!--                                        ceremonies. During the Minoan Civilization, it was a place of worship for Talos,-->
+                            <!--                                        the bronze giant guardian of Crete who protected the island from enemies."</em>-->
 
-                                </li>
-                                <li>
-                                    <b>Ancient Eleutherna (30-minute drive):</b>
-                                    <em>"During the ninth century BC, in sub-Mycenaean times, in the Geometric Period of
-                                        the later Greek Dark Ages, Dorians colonized the city on a steep, naturally
-                                        fortified ridge. The city's location made it a natural crossroads, as it lay
-                                        between Kydonia on the northwest coast and Knossos, and between the shore, where
-                                        it controlled its ports, Stavromenos and Panormos, and the great sanctuary cave
-                                        near the peak of Ida, Idaion Andron."</em>
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Margarites Village (25-minute drive):</b> A super cute village with-->
+                            <!--                                    shops & restaurants. The locals here specialize in making ceramics!-->
 
-                                </li>
-                                <li>
-                                    <b>Arkadi Monastery (45-minute drive):</b>
-                                    <em>"The Sacred Monastery of Arkadi is a historic Monastery of Crete founded by a
-                                        monk named Arkadios. The constant and uninterrupted presence of the Monastery in
-                                        the life of Crete for eight centuries is an integral part of the island's
-                                        history."</em>
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Ancient Eleutherna (30-minute drive):</b>-->
+                            <!--                                    <em>"During the ninth century BC, in sub-Mycenaean times, in the Geometric Period of-->
+                            <!--                                        the later Greek Dark Ages, Dorians colonized the city on a steep, naturally-->
+                            <!--                                        fortified ridge. The city's location made it a natural crossroads, as it lay-->
+                            <!--                                        between Kydonia on the northwest coast and Knossos, and between the shore, where-->
+                            <!--                                        it controlled its ports, Stavromenos and Panormos, and the great sanctuary cave-->
+                            <!--                                        near the peak of Ida, Idaion Andron."</em>-->
 
-                                </li>
-                                <li>
-                                    <b>Beaches (25-35 minute drives):</b> Spilies, Geropotamas, Ibis Hotel,
-                                    Beach Lake, Bali, Koukistres
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Arkadi Monastery (45-minute drive):</b>-->
+                            <!--                                    <em>"The Sacred Monastery of Arkadi is a historic Monastery of Crete founded by a-->
+                            <!--                                        monk named Arkadios. The constant and uninterrupted presence of the Monastery in-->
+                            <!--                                        the life of Crete for eight centuries is an integral part of the island's-->
+                            <!--                                        history."</em>-->
 
-                                </li>
-                                <li>
-                                    <b>Potential Hikes & Excursions Further Out:</b>
-                                    <ul>
-                                        <li>Knossos Palace (75-minute drive)</li>
-                                        <li>Preveli Beach (80-minute drive)</li>
-                                        <li>Matala Beach (2-hour drive)</li>
-                                        <li>Samaria Gorge (2.5-hour drive)</li>
-                                        <li>Balos Beach (3-hour drive)</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Beaches (25-35 minute drives):</b> Spilies, Geropotamas, Ibis Hotel,-->
+                            <!--                                    Beach Lake, Bali, Koukistres-->
+
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <b>Potential Hikes & Excursions Further Out:</b>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li>Knossos Palace (75-minute drive)</li>-->
+                            <!--                                        <li>Preveli Beach (80-minute drive)</li>-->
+                            <!--                                        <li>Matala Beach (2-hour drive)</li>-->
+                            <!--                                        <li>Samaria Gorge (2.5-hour drive)</li>-->
+                            <!--                                        <li>Balos Beach (3-hour drive)</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </li>-->
+                            <!--                            </ul>-->
                         </div>
                         <div id="skylab-location" class="large-inner-content">
                             <h1>LOCATION</h1>
@@ -313,7 +356,7 @@
                         <div id="skylab-mentors" class="small-inner-content">
                             <h1>MENTORS</h1>
                             <div class="mentors-inner">
-                                <div class="image-container"><img src="img/skylab-mentor-giulio.jpeg"
+                                <div class="image-container"><img src="img/skylab01/skylab-mentor-giulio.jpeg"
                                                                   alt="Giulio Prisco, a Black Sky Skylab01 mentor"/>
                                 </div>
                                 <div class="image-text">
@@ -331,7 +374,8 @@
                             </div>
                         </div>
                         <div id="apply" class="large-inner-content">
-                            <h1><a href="https://hackmd.io/@blackskysociety/skylab01-application">APPLY NOW</a>
+                            <h1><a href="https://blackskysociety.notion.site/19d97e3a828b8063a392f1e145aeadbb">APPLY
+                                NOW</a>
                             </h1>
 
                         </div>

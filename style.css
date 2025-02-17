@@ -804,6 +804,10 @@ script {
     padding-left: 5%;
 }
 
+.fotorama__wrap {
+    margin: 0 auto 0;
+}
+
 /*//////////////////////mobile styles////////////////////////////////////*/
 
 
