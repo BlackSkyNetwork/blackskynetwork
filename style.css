@@ -808,6 +808,20 @@ script {
     margin: 0 auto 0;
 }
 
+.fotorama__stage {
+    border-radius: 20px;
+
+}
+
+.fotorama__thumb {
+    border-radius: 30px;
+}
+
+.fotorama__thumb-border {
+    border-radius: 30px;
+    border-color: #FA35C3 !important;
+}
+
 /*//////////////////////mobile styles////////////////////////////////////*/
 
 
