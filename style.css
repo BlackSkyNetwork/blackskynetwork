@@ -371,7 +371,7 @@ main {
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
     border-radius: 11px;
-    width: 100%;
+    width: 80%;
     max-width: 1200px;
     margin-left: 2rem;
 }
@@ -753,7 +753,7 @@ script {
     /* border-left: 1px solid white; */
     /* border-top-right-radius: 30px; */
     /* border-right: 1px solid white; */
-    margin-top: 113%;
+    margin-top: 124%;
     padding: 0;
 }
 
@@ -764,7 +764,7 @@ script {
 
 .small-inner-content {
     width: 80%;
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin: 0 auto 0;
     padding: 3%;
 }
@@ -787,6 +787,7 @@ script {
     border-bottom: 1px solid rgb(255, 255, 255);
     border-radius: 11px;
     margin: 1% auto 0;
+    width: 80%;
 }
 
 .large-inner-content h1 {
