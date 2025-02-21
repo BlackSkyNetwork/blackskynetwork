@@ -746,6 +746,7 @@ script {
 
 .skylab-container-1 {
     font-size: 1.7em;
+    padding: 25px 0 0;
 }
 
 .skylab-container-2 {
@@ -753,7 +754,7 @@ script {
     /* border-left: 1px solid white; */
     /* border-top-right-radius: 30px; */
     /* border-right: 1px solid white; */
-    margin-top: 124%;
+    margin-top: 131%;
     padding: 0;
 }
 
@@ -786,8 +787,10 @@ script {
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
     border-radius: 11px;
-    margin: 1% auto 0;
+    margin: 0 auto 0;
     width: 80%;
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 .large-inner-content h1 {
@@ -799,11 +802,6 @@ script {
     margin-top: 5rem;
 }
 
-.image-text {
-    display: inline-block;
-    width: 65%;
-    padding-left: 5%;
-}
 
 .fotorama__wrap {
     margin: 0 auto 0;
@@ -821,6 +819,38 @@ script {
 .fotorama__thumb-border {
     border-radius: 30px;
     border-color: #FA35C3 !important;
+}
+
+.image-container-flex {
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+
+/*.image-container-flex img {*/
+/*        padding-left: 90px;*/
+/*    opacity: 0.55;*/
+/*    height: auto;*/
+/*}*/
+
+.image-container-flex .image-container {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.image-container-flex .image-text {
+    text-align: right;
+
+    align-items: center;
+    justify-self: right;
+    /*padding-right: 100px;*/
+    /*padding-bottom: 90px;*/
+    overflow: auto;
+    word-break: break-word;
+    width: 70%;
+    padding-left: 1%;
 }
 
 /*//////////////////////mobile styles////////////////////////////////////*/
