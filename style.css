@@ -745,7 +745,7 @@ script {
 /*SKYLAB*/
 
 .skylab-container-1 {
-    font-size: 1.7em;
+    font-size: 25px;
     padding: 25px 0 0;
 }
 
@@ -756,16 +756,18 @@ script {
     /* border-right: 1px solid white; */
     margin-top: 114%;
     padding: 0;
+    font-size: 25px;
+
 }
 
 .skylab-container-2 h3 {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 35px;
 }
 
 .small-inner-content {
     width: 80%;
-    font-size: 0.6em;
+    /*font-size: 0.6em;*/
     margin: 0 auto 0;
     padding: 3%;
 }
@@ -775,11 +777,11 @@ script {
 }
 
 .small-inner-content h3 {
-    font-size: 1.5em;
+    font-size: 35px;
 }
 
 .large-inner-content {
-    font-size: 0.7em;
+    /*font-size: 0.7em;*/
 }
 
 .large-inner-content {
@@ -842,7 +844,6 @@ script {
 
 .image-container-flex .image-text {
     text-align: right;
-
     align-items: center;
     justify-self: right;
     /*padding-right: 100px;*/
@@ -851,6 +852,14 @@ script {
     word-break: break-word;
     width: 70%;
     padding-left: 1%;
+}
+
+.image-text h3 {
+    text-align: right;
+}
+
+.image-text p {
+    font-size: 20px;
 }
 
 .horizontal-image {
@@ -866,18 +875,36 @@ script {
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
     padding: 1%;
+}
+
+.first-paragraph {
+    font-size: 30px;
+}
+
+.circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+    transform: translate(-0%, -0%);
 }
 
 /*//////////////////////mobile styles////////////////////////////////////*/
