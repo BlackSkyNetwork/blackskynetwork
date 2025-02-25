@@ -754,7 +754,7 @@ script {
     /* border-left: 1px solid white; */
     /* border-top-right-radius: 30px; */
     /* border-right: 1px solid white; */
-    margin-top: 131%;
+    margin-top: 114%;
     padding: 0;
 }
 
@@ -851,6 +851,33 @@ script {
     word-break: break-word;
     width: 70%;
     padding-left: 1%;
+}
+
+.horizontal-image {
+    margin-top: 6%;
+}
+
+.horizontal-image img {
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+    padding: 1%;
 }
 
 /*//////////////////////mobile styles////////////////////////////////////*/
