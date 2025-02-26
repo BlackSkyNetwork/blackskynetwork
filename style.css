@@ -1173,8 +1173,9 @@ script {
     }
 
     .mentors-inner {
-            margin-top: 3%;
+        margin-top: 3%;
     }
+
     .circular--portrait {
         width: 150px;
         height: 150px;
@@ -1185,8 +1186,13 @@ script {
     }
 
     .image-text p {
-    font-size: 18px;
-}
+        font-size: 18px;
+    }
+
+    .image-container-flex .image-container {
+        margin-bottom: -4%;
+        margin-top: 3%;
+    }
 }
 
   
