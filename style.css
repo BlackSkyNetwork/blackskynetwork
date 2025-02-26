@@ -893,6 +893,8 @@ script {
 
 .first-paragraph {
     font-size: 30px;
+        text-align: center;
+
 }
 
 .circular--portrait {
