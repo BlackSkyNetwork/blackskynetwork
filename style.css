@@ -845,7 +845,7 @@ script {
 }
 
 .image-text h3 {
-    text-align: right;
+    text-align: left;
 }
 
 .image-text p {
