@@ -884,7 +884,7 @@ script {
 
 .first-paragraph {
     font-size: 30px;
-        text-align: center;
+    text-align: center;
 
 }
 
@@ -1019,8 +1019,8 @@ script {
       background-color: #555;
     } */
     .content__wrapper {
-        width: 100%
-        padding: 2rem;
+        width: 100%;
+        /*padding: 2rem;*/
         justify-content: center;
         max-width: 600px;
         overflow: hidden;
@@ -1038,7 +1038,7 @@ script {
         margin-bottom: -.5vh;
         position: relative;
         margin-left: 4vw;
-        font-size: 12rem;
+        font-size: 10rem;
         width: auto;
         height: auto;
 
@@ -1063,7 +1063,7 @@ script {
     }
 
     .content-container1 {
-        margin-top: -34rem;
+        margin-top: -30rem;
         /* width: 100%; */
 
     }
@@ -1160,7 +1160,21 @@ script {
         width: 100%;
     }
 
+    .image-container-flex {
+        flex-wrap: wrap;
+    }
 
+    .image-container-flex .image-text {
+        width: 100%;
+    }
+
+    .image-text h3 {
+        text-align: center;
+    }
+
+    .mentors-inner {
+            margin-top: 3%;
+    }
 }
 
   
