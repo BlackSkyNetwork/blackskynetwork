@@ -1175,6 +1175,10 @@ script {
     .mentors-inner {
             margin-top: 3%;
     }
+    .circular--portrait {
+        width: 120px;
+        height: 120px;
+    }
 }
 
   
