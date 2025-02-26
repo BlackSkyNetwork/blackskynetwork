@@ -831,27 +831,17 @@ script {
 
 }
 
-/*.image-container-flex img {*/
-/*        padding-left: 90px;*/
-/*    opacity: 0.55;*/
-/*    height: auto;*/
-/*}*/
-
 .image-container-flex .image-container {
     margin-bottom: 0;
     margin-top: 0;
 }
 
 .image-container-flex .image-text {
-    text-align: right;
     align-items: center;
-    justify-self: right;
-    /*padding-right: 100px;*/
-    /*padding-bottom: 90px;*/
     overflow: auto;
     word-break: break-word;
     width: 70%;
-    padding-left: 1%;
+    padding-left: 5%;
 }
 
 .image-text h3 {
