@@ -1190,6 +1190,15 @@ script {
     }
 
     .image-container-flex .image-container {
+        margin-bottom: -6%;
+        margin-top: 5%;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .image-container-flex .image-container {
         margin-bottom: -9%;
         margin-top: 5%;
     }
