@@ -2,6 +2,7 @@ window.addEventListener('load', function() {
   initFluid();
 });
 
+
 function initFluid() {
 
 const canvas = document.getElementById('fluid');
@@ -953,13 +954,13 @@ function correctRadius (radius) {
     return radius;
 }
 
-window.addEventListener('mousedown', e => {
-  let pointer = pointers[0];
-  let posX = scaleByPixelRatio(e.clientX);
-  let posY = scaleByPixelRatio(e.clientY);
-  updatePointerDownData(pointer, -1, posX, posY);
-  clickSplat(pointer);
-});
+// window.addEventListener('mousedown', e => {
+//   let pointer = pointers[0];
+//   let posX = scaleByPixelRatio(e.clientX);
+//   let posY = scaleByPixelRatio(e.clientY);
+//   updatePointerDownData(pointer, -1, posX, posY);
+//   clickSplat(pointer);
+// });
 
 $('body').one( 'mousemove', e => {
   let pointer = pointers[0];
@@ -970,13 +971,13 @@ $('body').one( 'mousemove', e => {
   updatePointerMoveData(pointer, posX, posY, color);
 });
 
-window.addEventListener('mousemove', e => {
-    let pointer = pointers[0];
-    let posX = scaleByPixelRatio(e.clientX);
-    let posY = scaleByPixelRatio(e.clientY);
-    let color = pointer.color;
-    updatePointerMoveData(pointer, posX, posY, color);
-});
+// window.addEventListener('mousemove', e => {
+//     let pointer = pointers[0];
+//     let posX = scaleByPixelRatio(e.clientX);
+//     let posY = scaleByPixelRatio(e.clientY);
+//     let color = pointer.color;
+//     updatePointerMoveData(pointer, posX, posY, color);
+// });
 
 $('body').one( 'touchstart', e => {
   const touches = e.targetTouches;
@@ -990,34 +991,34 @@ $('body').one( 'touchstart', e => {
   }
 });  
 
-window.addEventListener('touchstart', e => {
-    const touches = e.targetTouches;
-    let pointer = pointers[0];
-    for (let i = 0; i < touches.length; i++) {
-      let posX = scaleByPixelRatio(touches[i].clientX);
-      let posY = scaleByPixelRatio(touches[i].clientY);  
-      updatePointerDownData(pointer, touches[i].identifier, posX, posY);
-    }
-});
-
-window.addEventListener('touchmove', e => {
-    const touches = e.targetTouches;
-    let pointer = pointers[0];
-    for (let i = 0; i < touches.length; i++) {
-      let posX = scaleByPixelRatio(touches[i].clientX);
-      let posY = scaleByPixelRatio(touches[i].clientY);
-      updatePointerMoveData(pointer, posX, posY, pointer.color);
-  }   
-}, false);
-
-window.addEventListener('touchend', e => {
-  const touches = e.changedTouches;
-  let pointer = pointers[0];  
-
-  for (let i = 0; i < touches.length; i++) {
-    updatePointerUpData(pointer);
-  }
-});
+// window.addEventListener('touchstart', e => {
+//     const touches = e.targetTouches;
+//     let pointer = pointers[0];
+//     for (let i = 0; i < touches.length; i++) {
+//       let posX = scaleByPixelRatio(touches[i].clientX);
+//       let posY = scaleByPixelRatio(touches[i].clientY);
+//       updatePointerDownData(pointer, touches[i].identifier, posX, posY);
+//     }
+// });
+//
+// window.addEventListener('touchmove', e => {
+//     const touches = e.targetTouches;
+//     let pointer = pointers[0];
+//     for (let i = 0; i < touches.length; i++) {
+//       let posX = scaleByPixelRatio(touches[i].clientX);
+//       let posY = scaleByPixelRatio(touches[i].clientY);
+//       updatePointerMoveData(pointer, posX, posY, pointer.color);
+//   }
+// }, false);
+//
+// window.addEventListener('touchend', e => {
+//   const touches = e.changedTouches;
+//   let pointer = pointers[0];
+//
+//   for (let i = 0; i < touches.length; i++) {
+//     updatePointerUpData(pointer);
+//   }
+// });
  
 function updatePointerDownData (pointer, id, posX, posY) {
     pointer.id = id;
@@ -1119,4 +1120,119 @@ function hashCode (s) {
     }
     return hash;
 };
+
+// Cleanup function to delete textures and framebuffers
+function cleanupWebGLResources() {
+    if (dye) {
+        deleteFramebuffer(dye.read.fbo);
+        deleteFramebuffer(dye.write.fbo);
+        deleteTexture(dye.read.texture);
+        deleteTexture(dye.write.texture);
+    }
+    if (velocity) {
+        deleteFramebuffer(velocity.read.fbo);
+        deleteFramebuffer(velocity.write.fbo);
+        deleteTexture(velocity.read.texture);
+        deleteTexture(velocity.write.texture);
+    }
+    if (divergence) {
+        deleteFramebuffer(divergence.fbo);
+        deleteTexture(divergence.texture);
+    }
+    if (curl) {
+        deleteFramebuffer(curl.fbo);
+        deleteTexture(curl.texture);
+    }
+    if (pressure) {
+        deleteFramebuffer(pressure.read.fbo);
+        deleteFramebuffer(pressure.write.fbo);
+        deleteTexture(pressure.read.texture);
+        deleteTexture(pressure.write.texture);
+    }
+    if (ditheringTexture) {
+        deleteTexture(ditheringTexture.texture);
+    }
+}
+
+function deleteTexture(texture) {
+    if (texture) {
+        gl.deleteTexture(texture);
+    }
+}
+
+function deleteFramebuffer(framebuffer) {
+    if (framebuffer) {
+        gl.deleteFramebuffer(framebuffer);
+    }
+}
+
+// Add event listeners to handle cleanup
+window.addEventListener('beforeunload', cleanupWebGLResources);
+canvas.addEventListener('webglcontextlost', event => {
+    event.preventDefault();
+    cleanupWebGLResources();
+});
+
+function cleanupEventListeners() {
+  window.removeEventListener('mousedown', onMouseDown);
+  window.removeEventListener('mousemove', onMouseMove);
+  window.removeEventListener('touchstart', onTouchStart);
+  window.removeEventListener('touchmove', onTouchMove);
+  window.removeEventListener('touchend', onTouchEnd);
+}
+
+// Ensure you define the event handler functions used above
+function onMouseDown(e) {
+  let pointer = pointers[0];
+  let posX = scaleByPixelRatio(e.clientX);
+  let posY = scaleByPixelRatio(e.clientY);
+  updatePointerDownData(pointer, -1, posX, posY);
+  clickSplat(pointer);
+}
+
+function onMouseMove(e) {
+  let pointer = pointers[0];
+  let posX = scaleByPixelRatio(e.clientX);
+  let posY = scaleByPixelRatio(e.clientY);
+  let color = pointer.color;
+  updatePointerMoveData(pointer, posX, posY, color);
+}
+
+function onTouchStart(e) {
+  const touches = e.targetTouches;
+  let pointer = pointers[0];
+  for (let i = 0; i < touches.length; i++) {
+    let posX = scaleByPixelRatio(touches[i].clientX);
+    let posY = scaleByPixelRatio(touches[i].clientY);
+    updatePointerDownData(pointer, touches[i].identifier, posX, posY);
+  }
+}
+
+function onTouchMove(e) {
+  const touches = e.targetTouches;
+  let pointer = pointers[0];
+  for (let i = 0; i < touches.length; i++) {
+    let posX = scaleByPixelRatio(touches[i].clientX);
+    let posY = scaleByPixelRatio(touches[i].clientY);
+    updatePointerMoveData(pointer, posX, posY, pointer.color);
+  }
+}
+
+function onTouchEnd(e) {
+  const touches = e.changedTouches;
+  let pointer = pointers[0];
+  for (let i = 0; i < touches.length; i++) {
+    updatePointerUpData(pointer);
+  }
+}
+
+// Attach the event listeners
+window.addEventListener('mousedown', onMouseDown);
+window.addEventListener('mousemove', onMouseMove);
+window.addEventListener('touchstart', onTouchStart);
+window.addEventListener('touchmove', onTouchMove, false);
+window.addEventListener('touchend', onTouchEnd);
+
+  window.addEventListener('beforeunload', cleanupEventListeners);
+
 };
