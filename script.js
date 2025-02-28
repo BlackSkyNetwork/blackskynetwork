@@ -1,6 +1,8 @@
-window.addEventListener('load', function() {
-  initFluid();
-});
+   function onLoadHandler() {
+       initFluid();
+   }
+   window.addEventListener('load', onLoadHandler);
+
 
 
 function initFluid() {
@@ -40,6 +42,7 @@ function pointerPrototype () {
 }
 
 let pointers = [];
+let video;
 pointers.push(new pointerPrototype());
 
 const { gl, ext } = getWebGLContext(canvas);
@@ -54,7 +57,7 @@ function getWebGLContext (canvas) {
 
 
  // Create a video element
- const video = document.createElement('video');
+    video = document.createElement('video');
 //  video.src = '/img/bgsv.mp4';
  video.autoplay = true;
  video.loop = true;
@@ -808,6 +811,7 @@ function resizeCanvas () {
     if (canvas.width != width || canvas.height != height) {
         canvas.width = width;
         canvas.height = height;
+
         return true;
     }
     return false;
@@ -978,6 +982,8 @@ $('body').one( 'mousemove', e => {
 //     let color = pointer.color;
 //     updatePointerMoveData(pointer, posX, posY, color);
 // });
+
+
 
 $('body').one( 'touchstart', e => {
   const touches = e.targetTouches;
@@ -1152,6 +1158,18 @@ function cleanupWebGLResources() {
     if (ditheringTexture) {
         deleteTexture(ditheringTexture.texture);
     }
+
+    if (video) {
+           video.remove();
+
+    }
+
+    if (pointers) {
+            // Clear pointers array
+            pointers.length = 0;
+    }
+
+   window.removeEventListener('load', onLoadHandler);
 }
 
 function deleteTexture(texture) {
@@ -1191,12 +1209,16 @@ function onMouseDown(e) {
 }
 
 function onMouseMove(e) {
+
   let pointer = pointers[0];
   let posX = scaleByPixelRatio(e.clientX);
   let posY = scaleByPixelRatio(e.clientY);
   let color = pointer.color;
   updatePointerMoveData(pointer, posX, posY, color);
+
 }
+
+
 
 function onTouchStart(e) {
   const touches = e.targetTouches;
