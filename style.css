@@ -902,6 +902,78 @@ script {
     transform: translate(-0%, -0%);
 }
 
+.funnel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90vw;
+}
+
+.funnel div {
+    text-align: center;
+    font-size: 13px;
+
+}
+
+/* Make each row progressively smaller to form a triangle */
+.funnel div:nth-child(1) {
+    max-width: 100%;
+}
+
+.funnel div:nth-child(2) {
+    max-width: 90%;
+}
+
+.funnel div:nth-child(3) {
+    max-width: 80%;
+}
+
+.funnel div:nth-child(4) {
+    max-width: 70%;
+}
+
+.funnel div:nth-child(5) {
+    max-width: 60%;
+}
+
+.funnel div:nth-child(6) {
+    max-width: 53%;
+}
+
+.funnel div:nth-child(7) {
+    max-width: 47%;
+}
+
+.funnel div:nth-child(8) {
+    max-width: 44%;
+}
+
+.funnel div:nth-child(9) {
+    max-width: 35%;
+}
+
+.funnel div:nth-child(10) {
+    max-width: 35%;
+}
+
+.funnel div:nth-child(11) {
+    max-width: 26%;
+}
+
+.funnel div:nth-child(12) {
+    max-width: 20%;
+}
+
+.funnel div:nth-child(13) {
+    max-width: 15%;
+}
+
+.funnel div:nth-child(14) {
+    max-width: 10%;
+}
+
+
 /*//////////////////////mobile styles////////////////////////////////////*/
 
 
@@ -1194,6 +1266,11 @@ script {
         margin-top: 5%;
     }
 
+    .funnel div {
+        font-size: 13px;
+        /* line-height: 1.5; */
+    }
+
 
 }
 
@@ -1202,6 +1279,74 @@ script {
         margin-bottom: -9%;
         margin-top: 5%;
     }
+
+    .funnel div {
+        font-size: 9px;
+        /* line-height: 1.5; */
+        /* margin: 5px 0; */
+    }
+
+    .funnel {
+        margin-bottom: 5%;
+    }
+
+    /* Make each row progressively smaller to form a triangle */
+    .funnel div:nth-child(1) {
+        max-width: 100%;
+    }
+
+    .funnel div:nth-child(2) {
+        max-width: 90%;
+    }
+
+    .funnel div:nth-child(3) {
+        max-width: 80%;
+    }
+
+    .funnel div:nth-child(4) {
+        max-width: 70%;
+    }
+
+    .funnel div:nth-child(5) {
+        max-width: 60%;
+    }
+
+    .funnel div:nth-child(6) {
+        max-width: 53%;
+    }
+
+    .funnel div:nth-child(7) {
+        max-width: 47%;
+    }
+
+    .funnel div:nth-child(8) {
+        max-width: 49%;
+    }
+
+    .funnel div:nth-child(9) {
+        max-width: 35%;
+    }
+
+    .funnel div:nth-child(10) {
+        max-width: 35%;
+    }
+
+    .funnel div:nth-child(11) {
+        max-width: 29%;
+    }
+
+    .funnel div:nth-child(12) {
+        max-width: 20%;
+    }
+
+    .funnel div:nth-child(13) {
+        max-width: 15%;
+    }
+
+    .funnel div:nth-child(14) {
+        max-width: 10%;
+    }
+
 }
 
   
