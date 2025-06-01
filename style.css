@@ -765,6 +765,11 @@ script {
     font-size: 35px;
 }
 
+.skylab-container-2 h4 {
+    text-align: left;
+    font-size: 25px;
+}
+
 .small-inner-content {
     width: 80%;
     /*font-size: 0.6em;*/
