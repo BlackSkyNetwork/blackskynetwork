@@ -334,7 +334,11 @@ main {
     color: #0000009b;
 
 }
-
+.heading-container-medium {
+    font-size: 10vw;
+    padding: 0;
+    margin-top: 30vh;
+}
 
 .content {
     display: flex;
@@ -757,7 +761,17 @@ script {
     margin-top: 170%;
     padding: 0;
     font-size: 25px;
+}
 
+
+.symposia-container-2 {
+    /* height: max-content; */
+    /* border-left: 1px solid white; */
+    /* border-top-right-radius: 30px; */
+    /* border-right: 1px solid white; */
+    margin-top: 148%;
+    padding: 0;
+    font-size: 25px;
 }
 
 .skylab-container-2 h3 {
@@ -1108,17 +1122,6 @@ script {
     .header {
         /* height: 9rem;
         margin-top: 9rem; */
-    }
-
-    .heading-container {
-        margin-top: .5vh;
-        margin-bottom: -.5vh;
-        position: relative;
-        margin-left: 4vw;
-        font-size: 10rem;
-        width: auto;
-        height: auto;
-
     }
 
     .content-container,
