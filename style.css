@@ -793,10 +793,6 @@ script {
 }
 
 .large-inner-content {
-    /*font-size: 0.7em;*/
-}
-
-.large-inner-content {
     /* border: 1px solid white; */
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
