@@ -984,7 +984,8 @@ script {
 /* Aetheria Symposia I Page Styles */
 
 .heading-container-symposia {
-    font-size: 10vw;
+    font-size: 11vw;
+    width: 65%;
 }
 
 
