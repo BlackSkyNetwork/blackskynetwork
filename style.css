@@ -1012,6 +1012,48 @@ script {
     width: 65%;
 }
 
+.schedule .event {
+    position: relative;
+    padding: 2rem 0;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden; /* Ensures float containment */
+}
+
+.schedule .event:last-child {
+    border-bottom: none;
+}
+
+.schedule .event-image {
+    width: 300px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    margin-bottom: 1rem; /* Space between image and any wrapped text below */
+}
+
+.event-image-left .event-image {
+    float: left;
+    margin-right: 2rem; /* Space between image and text */
+}
+
+.event-image-right .event-image {
+    float: right;
+    margin-left: 2rem; /* Space between image and text */
+}
+
+.schedule .event-content h3 {
+    margin-top: 0;
+}
+
+/* Clear the float after each event */
+.schedule .event::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.schedule .event-content p {
+    font-size: 2.2rem;
+}
+
 
 
 /*//////////////////////mobile styles////////////////////////////////////*/
@@ -1389,6 +1431,14 @@ script {
 
     .funnel div:nth-child(14) {
         max-width: 10%;
+    }
+
+    .event-image-left .event-image {
+        float: right;
+    }
+
+    .event-image-right .event-image {
+        float: left;
     }
 
 }
