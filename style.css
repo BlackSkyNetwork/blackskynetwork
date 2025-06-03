@@ -1072,6 +1072,11 @@ script {
     -webkit-line-clamp: unset;
 }
 
+.schedule .event-time {
+    font-style: italic;
+    display: block;
+}
+
 .show-more-btn {
     color: #FA35C3;
     cursor: pointer;
