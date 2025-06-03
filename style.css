@@ -783,6 +783,9 @@ script {
 .skylab-container-1 {
     font-size: 25px;
     padding: 25px 0 0;
+}
+
+.symposia-container {
     border-bottom: 0;
 }
 
