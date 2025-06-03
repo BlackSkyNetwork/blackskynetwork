@@ -1046,6 +1046,7 @@ script {
 
 .schedule .event-content h3 {
     margin-top: 0;
+    text-align: left;
 }
 
 /* Clear the float after each event */
