@@ -1486,19 +1486,22 @@ script {
     .funnel div:nth-child(14) {
         max-width: 10%;
     }
-
-    .event-image-left .event-image {
-        float: right;
+    .event {
+        flex-direction: column;
     }
 
-    .event-image-right .event-image {
-        float: left;
+    .event-image {
+        margin: 0 auto;
+        max-width: 100%;
+        display: block;
     }
 
-    .float-right, .float-left {
+    .event.event-image-left .event-image,
+    .event.event-image-right .event-image {
         float: none;
+        margin: 0 auto 20px; /* Centers image and adds some space below */
     }
-
+    
     .event-date-time {
         font-size: 1.5rem;
         margin-top: 3%;
