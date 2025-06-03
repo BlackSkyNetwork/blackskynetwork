@@ -783,6 +783,7 @@ script {
 .skylab-container-1 {
     font-size: 25px;
     padding: 25px 0 0;
+    border-bottom: 0;
 }
 
 .skylab-container-2 {
@@ -1051,7 +1052,8 @@ script {
     clear: both;
 }
 .schedule .event-content p {
-    font-size: 2.2rem;
+    /*font-size: 2.2rem;*/
+    font-size: 20px;
 }
 
 .schedule .event-content p {
@@ -1069,7 +1071,8 @@ script {
 .show-more-btn {
     color: #FA35C3;
     cursor: pointer;
-    font-size: 2.2rem;
+    font-size: 20px;
+    /*This should match the size of the text in the event-content p*/
 }
 
 .float-left {
