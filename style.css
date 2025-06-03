@@ -1047,6 +1047,7 @@ script {
 .schedule .event-content h3 {
     margin-top: 0;
     text-align: left;
+    font-size: 30px;
 }
 
 /* Clear the float after each event */
@@ -1062,7 +1063,7 @@ script {
 
 .schedule .event-content p {
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* Show 3 lines initially */
+    -webkit-line-clamp: 7; /* Show 3 lines initially */
     -webkit-box-orient: vertical;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -1075,6 +1076,12 @@ script {
 .schedule .event-time {
     font-style: italic;
     display: block;
+}
+
+.schedule .event-date {
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 9px;
 }
 
 .show-more-btn {
