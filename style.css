@@ -1054,6 +1054,34 @@ script {
     font-size: 2.2rem;
 }
 
+.schedule .event-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Show 3 lines initially */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.schedule .event-content p.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.show-more-btn {
+    color: #FA35C3;
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+.show-more-btn:hover {
+    text-decoration: underline;
+}
 
 
 /*//////////////////////mobile styles////////////////////////////////////*/
@@ -1439,6 +1467,10 @@ script {
 
     .event-image-right .event-image {
         float: left;
+    }
+
+    .float-right, .float-left {
+        float: none;
     }
 
 }
