@@ -1374,6 +1374,7 @@ script {
 
     .image-container-flex .image-text {
         width: 100%;
+        padding-left: 0;
     }
 
     .image-text h3 {
