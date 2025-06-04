@@ -1012,7 +1012,7 @@ script {
 /* Aetheria Symposia I Page Styles */
 
 .heading-container-symposia {
-    font-size: 11vw;
+    font-size: 17rem;
     width: 65%;
 }
 
@@ -1250,10 +1250,6 @@ script {
         width: auto;
         height: auto;
 
-    }
-
-    .heading-container-symposia {
-        font-size: 7rem;
     }
 
     .content-container,
@@ -1510,5 +1506,9 @@ script {
 
     .schedule .event-date {
         padding: 6px;
+    }
+
+    .heading-container-symposia {
+        font-size: 7rem;
     }
 }
