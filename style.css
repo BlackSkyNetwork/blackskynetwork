@@ -1095,6 +1095,7 @@ script {
     color: #FA35C3;
     cursor: pointer;
     font-size: 20px;
+    display: none;
     /*This should match the size of the text in the event-content p*/
 }
 
@@ -1511,5 +1512,9 @@ script {
 
     .heading-container-symposia {
         font-size: 7rem;
+    }
+
+    .show-more-btn.float-left {
+        float: right;
     }
 }

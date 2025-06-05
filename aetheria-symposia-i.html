@@ -154,7 +154,7 @@
                                         sky as our backdrop, we gather on the Aetheria rooftop to open the first of our
                                         monthly lunar gatherings — Noumenia Oneira — a place to remember, reimagine, and
                                         realign. <i>(Note: In-person only)</i></p>
-                                    <!--                                    <span class="show-more-btn float-left">[show more]</span>-->
+                                        <span class="show-more-btn float-left">[show more]</span>
                                 </div>
                             </div>
 
@@ -312,7 +312,7 @@
                             <div class="first-paragraph">Our compound in Crete, Greece features six bedrooms split
                                 across two independent units, with four full bathrooms. When we are on location, the
                                 symposia will take place on our spacious rooftop, yard, and other common areas. The
-                                nearest airport is Heraklion, located a 70 minute drive away.
+                                nearest airport is Heraklion, located a 70-minute drive away.
                             </div>
                             <br>
                             <div class="fotorama center-align" data-nav="thumbs" data-width="700"
@@ -807,13 +807,39 @@
     </div>
 </div>
 <script>
-    document.querySelectorAll('.show-more-btn').forEach(button => {
-        button.addEventListener('click', function () {
-            const description = this.previousElementSibling;
-            const isExpanded = description.classList.contains('expanded');
+    // document.querySelectorAll('.show-more-btn').forEach(button => {
+    //     button.addEventListener('click', function () {
+    //         const description = this.previousElementSibling;
+    //         const isExpanded = description.classList.contains('expanded');
+    //
+    //         description.classList.toggle('expanded');
+    //         this.textContent = isExpanded ? '[show more]' : '[show less]';
+    //     });
+    // });
+    document.addEventListener('DOMContentLoaded', function() {
+        const eventContents = document.querySelectorAll('.event-content p');
 
-            description.classList.toggle('expanded');
-            this.textContent = isExpanded ? '[show more]' : '[show less]';
+        eventContents.forEach(content => {
+            const showMoreBtn = content.parentElement.querySelector('.show-more-btn');
+
+            const isTextClamped = content => content.scrollHeight > content.offsetHeight
+            console.log(isTextClamped(content));
+            // Only show button if content is truncated
+            if (isTextClamped(content)) {
+                showMoreBtn.style.display = 'inline-block';
+
+                showMoreBtn.addEventListener('click', function() {
+                    if (content.style.webkitLineClamp === 'none') {
+                        content.style.webkitLineClamp = '7';
+                        this.textContent = '[show more]';
+                    } else {
+                        content.style.webkitLineClamp = 'none';
+                        this.textContent = '[show less]';
+                    }
+                });
+            } else {
+                showMoreBtn.style.display = 'none';
+            }
         });
     });
 </script>
