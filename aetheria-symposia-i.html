@@ -164,14 +164,9 @@
                                 <div class="event-content">
                                     <h3>Psychro Genesis (Birthplace Journey)</h3>
                                     <div class="event-date-time"><span class="event-date">JUNE 26</span><span
-                                            class="event-time">12:30 EET</span><br></div>
-                                    <p>Journey to Psychro Cave in the Lasithi Plateau, where Titan Rhea allegedly gave
-                                        birth to Zeus in secret to protect him from Cronos, who devoured his children to
-                                        prevent his prophesied overthrow. Stunning stalactite formations create a
-                                        natural cathedral within this sacred site. Participants with abilities to tap
-                                        into subtle energies can optionally contribute their impressions to our Street
-                                        Science research by documenting their intuitive sense of the location's role in
-                                        the mythological narrative.</p>
+                                            class="event-time">12:30 EET</span><br /></div>
+                                    <p>Journey to Psychro Cave in the Lasithi Plateau, where Titan Rhea allegedly gave birth to Zeus in secret to protect him from Cronos, who devoured his children to prevent his prophesied overthrow. Stunning stalactite formations create a natural cathedral within this sacred site. Participants with abilities to tap into subtle energies can optionally contribute their impressions to our Street Science research by documenting their intuitive sense of the location's role in the mythological narrative.
+                                    </p>
                                     <span class="show-more-btn float-right">[show more]</span>
                                 </div>
                             </div>
@@ -819,13 +814,13 @@
     //         this.textContent = isExpanded ? '[show more]' : '[show less]';
     //     });
     // });
-    document.addEventListener('DOMContentLoaded', function () {
+    window.onload = function() {
         const eventContents = document.querySelectorAll('.event-content p');
 
         eventContents.forEach(content => {
             const showMoreBtn = content.parentElement.querySelector('.show-more-btn');
-
             const isTextClamped = content => content.scrollHeight > content.clientHeight;
+
             // Only show button if content is truncated
             if (isTextClamped(content)) {
                 showMoreBtn.style.display = 'inline-block';
@@ -843,7 +838,7 @@
                 showMoreBtn.style.display = 'none';
             }
         });
-    });
+    };
 </script>
 
 </body>
