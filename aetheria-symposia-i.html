@@ -133,7 +133,13 @@
                                     <p>Our opening symposium establishes the foundational groundwork for
                                         interdisciplinary inquiry. Stella R. Magnet introduces Black Sky Society and the
                                         metaphysical architecture guiding our investigations, while Giulio Prisco
-                                        virtually unveils the emerging street science of irrational mechanics. Anastasia Kriuchkova presents her analytical approach to astrology, and Giek (Stephanie Smit) explores innovative methods for investigating reincarnation and past-life phenomena. This follows into Socratic dialogue with Aetheria participants exploring intersections between ancient wisdom, theology, frontier exploration, and humanity's evolving potential — culminating in a symposiastic banquet where discourse flows alongside sustenance.</p>
+                                        virtually unveils the emerging street science of irrational mechanics. Anastasia
+                                        Kriuchkova presents her analytical approach to astrology, and Giek (Stephanie
+                                        Smit) explores innovative methods for investigating reincarnation and past-life
+                                        phenomena. This follows into Socratic dialogue with Aetheria participants
+                                        exploring intersections between ancient wisdom, theology, frontier exploration,
+                                        and humanity's evolving potential — culminating in a symposiastic banquet where
+                                        discourse flows alongside sustenance.</p>
                                     <span class="show-more-btn float-right">[show more]</span>
                                 </div>
                             </div>
@@ -146,8 +152,10 @@
                                             class="event-time">20:00-23:00 EET</span><br></div>
                                     <p>Noumenia, the ancient Greek celebration marking the beginning of each lunar
                                         month, becomes our inspiration. With the new moon as our guide, and the black
-                                        sky as our backdrop, we gather on the Aetheria rooftop to open the first of our monthly lunar gatherings — Noumenia Oneira — a place to remember, dream, and align. <i>(Note: In-person only)</i></p>
-                                        <span class="show-more-btn float-left">[show more]</span>
+                                        sky as our backdrop, we gather on the Aetheria rooftop to open the first of our
+                                        monthly lunar gatherings — Noumenia Oneira — a place to remember, dream, and
+                                        align. <i>(Note: In-person only)</i></p>
+                                    <span class="show-more-btn float-left">[show more]</span>
                                 </div>
                             </div>
 
@@ -228,7 +236,8 @@
                                         potential through ancient practices. MN Finkelstein guides participants through
                                         plant meditation as a somatic and molecular practice, exploring phase
                                         transitions and becoming-with plants through the lens of both affect and
-                                        chemistry. Max Konstantinovsky and Felipe Rocha Campos examine how geospatial intelligence evolves into
+                                        chemistry. Max Konstantinovsky and Felipe Rocha Campos examine how geospatial
+                                        intelligence evolves into
                                         technologies that enhance Noospheric coherence and planetary awareness. Anahaa
                                         guides participants through Kriya Yoga to unlock dormant capacities,
                                         demonstrating how individual transformation ripples through the larger web of
@@ -531,10 +540,22 @@
                                     </div>
                                     <div class="image-text">
                                         <h3>Anastasia Kriuchkova</h3>
-                                        <p>Anastasia is an astrologist and energy practitioner who brings a unique analytical perspective to her spiritual work, with a mathematics background from Moscow State University, PhD studies in statistics at the University of Kentucky, and experience as an IT consultant and software company co-owner.  Through energy work including Reiki and elemental energies, she helps people overcome challenges and find energetic support for their life paths while investigating methods for achieving personal balance and deeper self-knowledge.
+                                        <p>Anastasia is an astrologist and energy practitioner who brings a unique
+                                            analytical perspective to her spiritual work, with a mathematics background
+                                            from Moscow State University, PhD studies in statistics at the University of
+                                            Kentucky, and experience as an IT consultant and software company co-owner.
+                                            Through energy work including Reiki and elemental energies, she helps people
+                                            overcome challenges and find energetic support for their life paths while
+                                            investigating methods for achieving personal balance and deeper
+                                            self-knowledge.
                                         </p>
-                                        <p><i>Anastasia will be giving a talk during Aetheria Symposia I about how she approaches astrology as a science for understanding how individuals manifest their birth energies and navigate planetary cycles, rather than as mystical practice.</i></p>
-                                        <p><i>Anastasia is living on Crete permanently, and offers services at Aetheria when multiple participants book together for the same day, providing Reiki energy healing sessions and astrology consultations starting at €30.</i></p>
+                                        <p><i>Anastasia will be giving a talk during Aetheria Symposia I about how she
+                                            approaches astrology as a science for understanding how individuals manifest
+                                            their birth energies and navigate planetary cycles, rather than as mystical
+                                            practice.</i></p>
+                                        <p><i>Anastasia is living on Crete permanently, and offers services at Aetheria
+                                            when multiple participants book together for the same day, providing Reiki
+                                            energy healing sessions and astrology consultations starting at €30.</i></p>
                                     </div>
                                 </div>
                                 <!--                                <div class="image-container-flex">-->
@@ -798,19 +819,18 @@
     //         this.textContent = isExpanded ? '[show more]' : '[show less]';
     //     });
     // });
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const eventContents = document.querySelectorAll('.event-content p');
 
         eventContents.forEach(content => {
             const showMoreBtn = content.parentElement.querySelector('.show-more-btn');
 
-            const isTextClamped = content => content.scrollHeight > content.offsetHeight
-            console.log(isTextClamped(content));
+            const isTextClamped = content => content.scrollHeight > content.clientHeight;
             // Only show button if content is truncated
             if (isTextClamped(content)) {
                 showMoreBtn.style.display = 'inline-block';
 
-                showMoreBtn.addEventListener('click', function() {
+                showMoreBtn.addEventListener('click', function () {
                     if (content.style.webkitLineClamp === 'none') {
                         content.style.webkitLineClamp = '7';
                         this.textContent = '[show more]';
